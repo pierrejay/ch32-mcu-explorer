@@ -368,7 +368,7 @@
     "ramKB": 4,
     "package": "SOP8",
     "pins": 8,
-    "packageSize": null,
+    "packageSize": "3.9x5.0 mm",
     "gpio": 6,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -422,27 +422,20 @@
       "pioc": false
     },
     "notes": [
-      "Oct-2026 selection table lists 19 KB CodeFlash; product feature list (EN) and datasheet summary state 16 KB Flash (difference is likely the BootLoader area usable as code).",
-      "ISA not stated on the product page; WCH documents the QingKe V2C core as RV32EmC (CH32V006/V007 datasheets).",
-      "VDD 2-5.5 V per selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "Package body size not filled: datasheet V1.7 not reviewed.",
-      "SPI not available on this package per selection table."
+      "16 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.7; Oct-2026 selection table lists 19 KB CodeFlash.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
+      "SPI not available on this package per datasheet resource table."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V002 datasheet V1.7 (CN)",
+        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V002 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V002.html",
         "detail": "Selection image https://img.wch.cn/20261015/3044d5c2-597f-4c8e-9ba9-681c2354601b.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package; feature list (V2C core, 7-ch DMA, 1-wire SDI)"
-      },
-      {
-        "title": "WCH CH32V002 datasheet V1.7 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
-        "detail": "Download listing only (V1.7, 2025-12-31); PDF could not be retrieved, so package sizes and electrical limits are not filled"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -462,7 +455,7 @@
     "ramKB": 4,
     "package": "QFN12",
     "pins": 12,
-    "packageSize": null,
+    "packageSize": "2x2 mm",
     "gpio": 11,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -516,27 +509,20 @@
       "pioc": false
     },
     "notes": [
-      "Oct-2026 selection table lists 19 KB CodeFlash; product feature list (EN) and datasheet summary state 16 KB Flash (difference is likely the BootLoader area usable as code).",
-      "ISA not stated on the product page; WCH documents the QingKe V2C core as RV32EmC (CH32V006/V007 datasheets).",
-      "VDD 2-5.5 V per selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "Package body size not filled: datasheet V1.7 not reviewed.",
-      "SPI not available on this package per selection table."
+      "16 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.7; Oct-2026 selection table lists 19 KB CodeFlash.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
+      "SPI not available on this package per datasheet resource table."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V002 datasheet V1.7 (CN)",
+        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V002 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V002.html",
         "detail": "Selection image https://img.wch.cn/20261015/3044d5c2-597f-4c8e-9ba9-681c2354601b.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package; feature list (V2C core, 7-ch DMA, 1-wire SDI)"
-      },
-      {
-        "title": "WCH CH32V002 datasheet V1.7 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
-        "detail": "Download listing only (V1.7, 2025-12-31); PDF could not be retrieved, so package sizes and electrical limits are not filled"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -556,7 +542,7 @@
     "ramKB": 4,
     "package": "SOP16",
     "pins": 16,
-    "packageSize": null,
+    "packageSize": "3.9x10.0 mm",
     "gpio": 14,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -610,26 +596,19 @@
       "pioc": false
     },
     "notes": [
-      "Oct-2026 selection table lists 19 KB CodeFlash; product feature list (EN) and datasheet summary state 16 KB Flash (difference is likely the BootLoader area usable as code).",
-      "ISA not stated on the product page; WCH documents the QingKe V2C core as RV32EmC (CH32V006/V007 datasheets).",
-      "VDD 2-5.5 V per selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "Package body size not filled: datasheet V1.7 not reviewed."
+      "16 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.7; Oct-2026 selection table lists 19 KB CodeFlash.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V002 datasheet V1.7 (CN)",
+        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V002 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V002.html",
         "detail": "Selection image https://img.wch.cn/20261015/3044d5c2-597f-4c8e-9ba9-681c2354601b.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package; feature list (V2C core, 7-ch DMA, 1-wire SDI)"
-      },
-      {
-        "title": "WCH CH32V002 datasheet V1.7 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
-        "detail": "Download listing only (V1.7, 2025-12-31); PDF could not be retrieved, so package sizes and electrical limits are not filled"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -649,7 +628,7 @@
     "ramKB": 4,
     "package": "QFN20",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "3x3 mm",
     "gpio": 18,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -703,26 +682,19 @@
       "pioc": false
     },
     "notes": [
-      "Oct-2026 selection table lists 19 KB CodeFlash; product feature list (EN) and datasheet summary state 16 KB Flash (difference is likely the BootLoader area usable as code).",
-      "ISA not stated on the product page; WCH documents the QingKe V2C core as RV32EmC (CH32V006/V007 datasheets).",
-      "VDD 2-5.5 V per selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "Package body size not filled: datasheet V1.7 not reviewed."
+      "16 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.7; Oct-2026 selection table lists 19 KB CodeFlash.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V002 datasheet V1.7 (CN)",
+        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V002 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V002.html",
         "detail": "Selection image https://img.wch.cn/20261015/3044d5c2-597f-4c8e-9ba9-681c2354601b.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package; feature list (V2C core, 7-ch DMA, 1-wire SDI)"
-      },
-      {
-        "title": "WCH CH32V002 datasheet V1.7 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
-        "detail": "Download listing only (V1.7, 2025-12-31); PDF could not be retrieved, so package sizes and electrical limits are not filled"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -742,7 +714,7 @@
     "ramKB": 4,
     "package": "TSSOP20",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "4.4x6.5 mm",
     "gpio": 18,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -796,26 +768,19 @@
       "pioc": false
     },
     "notes": [
-      "Oct-2026 selection table lists 19 KB CodeFlash; product feature list (EN) and datasheet summary state 16 KB Flash (difference is likely the BootLoader area usable as code).",
-      "ISA not stated on the product page; WCH documents the QingKe V2C core as RV32EmC (CH32V006/V007 datasheets).",
-      "VDD 2-5.5 V per selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "Package body size not filled: datasheet V1.7 not reviewed."
+      "16 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.7; Oct-2026 selection table lists 19 KB CodeFlash.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V002 datasheet V1.7 (CN)",
+        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V002 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V002.html",
         "detail": "Selection image https://img.wch.cn/20261015/3044d5c2-597f-4c8e-9ba9-681c2354601b.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package; feature list (V2C core, 7-ch DMA, 1-wire SDI)"
-      },
-      {
-        "title": "WCH CH32V002 datasheet V1.7 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V002DS0_PDF.html",
-        "detail": "Download listing only (V1.7, 2025-12-31); PDF could not be retrieved, so package sizes and electrical limits are not filled"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -835,14 +800,14 @@
     "ramKB": 6,
     "package": "TSSOP20",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "4.4x6.5 mm",
     "gpio": 18,
     "vMin": 2.7,
     "vMax": 5.5,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -10,
+    "tempMax": 70,
     "uart": 1,
     "spi": 1,
     "i2c": 1,
@@ -889,21 +854,20 @@
       "pioc": false
     },
     "notes": [
-      "CodeFlash: EN product page 32 KB; CN product page and Oct-2026 selection table 35 KB (likely includes BootLoader area).",
-      "Temperature suffix '1' is not defined in the published WCH naming rules; operating range not established.",
-      "VDD 2.7-5.5 V per CN product page and Oct-2026 selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "ISA inferred from WCH documentation of the QingKe V2C core (RV32EmC); datasheet V1.9 not reviewed."
+      "32 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.9; CN product page and Oct-2026 selection table list 35 KB.",
+      "VDD 2.7-5.5 V; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
+      "Operating ambient -10..70 °C (datasheet V1.9 Tables 3-1/3-2); naming rules label suffix \"1\" as 0..70 °C commercial grade."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V004 datasheet V1.9",
+        "url": "https://www.wch-ic.com/downloads/CH32V004DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Tables 3-1/3-2 ratings and operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V004 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V004.html",
         "detail": "Selection image https://img.wch.cn/20261014/844b140a-0d33-421a-9b06-d04593659619.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package"
-      },
-      {
-        "title": "WCH CH32V004 datasheet V1.9 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V004DS0_PDF.html",
-        "detail": "Download listing only (V1.9, 2026-08-18, scope CH32V004F6P1, CH32V004F6U1); PDF could not be retrieved"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -923,14 +887,14 @@
     "ramKB": 6,
     "package": "QFN20L",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "3x3 mm",
     "gpio": 18,
     "vMin": 2.7,
     "vMax": 5.5,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -10,
+    "tempMax": 70,
     "uart": 1,
     "spi": 1,
     "i2c": 1,
@@ -977,21 +941,20 @@
       "pioc": false
     },
     "notes": [
-      "CodeFlash: EN product page 32 KB; CN product page and Oct-2026 selection table 35 KB (likely includes BootLoader area).",
-      "Temperature suffix '1' is not defined in the published WCH naming rules; operating range not established.",
-      "VDD 2.7-5.5 V per CN product page and Oct-2026 selection table; EN product page lists rated 2.5/3.3/5 V.",
-      "ISA inferred from WCH documentation of the QingKe V2C core (RV32EmC); datasheet V1.9 not reviewed."
+      "32 KB CodeFlash plus 3328 B BootLoader area per datasheet V1.9; CN product page and Oct-2026 selection table list 35 KB.",
+      "VDD 2.7-5.5 V; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
+      "Operating ambient -10..70 °C (datasheet V1.9 Tables 3-1/3-2); naming rules label suffix \"1\" as 0..70 °C commercial grade."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V004 datasheet V1.9",
+        "url": "https://www.wch-ic.com/downloads/CH32V004DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Table 2-1 pin definitions, Tables 3-1/3-2 ratings and operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V004 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V004.html",
         "detail": "Selection image https://img.wch.cn/20261014/844b140a-0d33-421a-9b06-d04593659619.png: per-part flash/SRAM/GPIO/timers/ADC/USART/I2C/SPI/VDD/package"
-      },
-      {
-        "title": "WCH CH32V004 datasheet V1.9 (not reviewed)",
-        "url": "https://www.wch-ic.com/downloads/CH32V004DS0_PDF.html",
-        "detail": "Download listing only (V1.9, 2026-08-18, scope CH32V004F6P1, CH32V004F6U1); PDF could not be retrieved"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1065,16 +1028,16 @@
       "pioc": false
     },
     "notes": [
-      "32 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 35 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
       "256 B user-defined info area; no separate data flash."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V005 product page and selection table (2026-10)",
@@ -1153,16 +1116,16 @@
       "pioc": false
     },
     "notes": [
-      "32 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 35 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
       "256 B user-defined info area; no separate data flash."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V005 product page and selection table (2026-10)",
@@ -1241,16 +1204,16 @@
       "pioc": false
     },
     "notes": [
-      "32 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 35 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
       "256 B user-defined info area; no separate data flash."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V005 product page and selection table (2026-10)",
@@ -1329,17 +1292,17 @@
       "pioc": false
     },
     "notes": [
-      "32 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 35 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
       "256 B user-defined info area; no separate data flash.",
-      "SPI not available on this package."
+      "SPI not available on this package per datasheet resource table."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V005 product page and selection table (2026-10)",
@@ -1418,16 +1381,21 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table but absent from the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
     ],
     "sources": [
       {
+        "title": "WCH CH32V006/V005 datasheet V2.0",
+        "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
+        "detail": "Part not listed in the V2.0 resource/ordering tables; family sections (§1.4, Table 3-2, Ch.4) used to cross-check; copy supplied by user"
+      },
+      {
         "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1506,15 +1474,15 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1593,15 +1561,15 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1680,15 +1648,15 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1767,16 +1735,21 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table but absent from the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
     ],
     "sources": [
       {
+        "title": "WCH CH32V006/V005 datasheet V2.0",
+        "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
+        "detail": "Part not listed in the V2.0 resource/ordering tables; family sections (§1.4, Table 3-2, Ch.4) used to cross-check; copy supplied by user"
+      },
+      {
         "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1855,15 +1828,15 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -1942,16 +1915,21 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table but absent from the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
     ],
     "sources": [
       {
+        "title": "WCH CH32V006/V005 datasheet V2.0",
+        "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
+        "detail": "Part not listed in the V2.0 resource/ordering tables; family sections (§1.4, Table 3-2, Ch.4) used to cross-check; copy supplied by user"
+      },
+      {
         "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -2030,15 +2008,15 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -2117,14 +2095,14 @@
       "pioc": false
     },
     "notes": [
-      "16 KB CodeFlash / 4 KB SRAM per datasheet V1.8; Oct-2026 selection table lists 19 KB Flash. No OPA and one USART on this part.",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC."
+      "16 KB CodeFlash / 4 KB SRAM per datasheet V2.0; Oct-2026 selection table lists 19 KB Flash. No OPA and one USART on this part.",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V."
     ],
     "sources": [
       {
-        "title": "WCH CH32V006/V005 datasheet V1.8 (EN and CN)",
+        "title": "WCH CH32V006/V005 datasheet V2.0",
         "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
-        "detail": "Product resource table (front page), Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 operating conditions, Ch.4 package/ordering table; read from an LCSC-hosted copy of the WCH PDF (EN atta.szlcsc.com/upload/public/pdf/source/20251215/55744532B0660A1F292C8E9A62911D5C.pdf; CN .../20251203/C221D2170A0096F61AB2138A8B98E324.pdf) because the WCH download page requires an interactive session; WCH lists V2.0 (2026-03-07) as current, not reviewed"
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
       },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
@@ -2149,7 +2127,7 @@
     "ramKB": 8,
     "package": "QFN12",
     "pins": 12,
-    "packageSize": null,
+    "packageSize": "2x2 mm",
     "gpio": 11,
     "vMin": 2.0,
     "vMax": 5.5,
@@ -2173,7 +2151,7 @@
     "touchChannels": 4,
     "timers": "1× 16-bit advanced (TIM1), 1× 16-bit general (TIM2), 1× 16-bit simplified (TIM3), 32-bit SysTick, 2× WDG",
     "dmaChannels": 7,
-    "debug": null,
+    "debug": "1-wire SDI",
     "features": {
       "usbFS": false,
       "usbHS": false,
@@ -2203,22 +2181,21 @@
       "pioc": false
     },
     "notes": [
-      "62 KB CodeFlash per datasheet V1.8; product page and Oct-2026 selection table list 65 KB (adds the 3 KB BootLoader area usable as code).",
-      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC.",
+      "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
+      "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Only in the Oct-2026 selection table (not in datasheet V1.8); package size, debug pins not verified.",
-      "SPI not available on this package."
+      "SPI not available on this package per datasheet resource table."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V006/V005 datasheet V2.0",
+        "url": "https://www.wch-ic.com/downloads/CH32V006DS0_PDF.html",
+        "detail": "Product resource table (front page), §1.4 functional description, Tables 2-1-1/2-1-2/2-2 pin definitions, Table 3-2 general operating conditions, Table 3-23 ADC, Ch.4 package/ordering table, Series Product Naming Rules; copy supplied by user"
+      },
       {
         "title": "WCH CH32V006 product page and selection table (2026-10)",
         "url": "https://www.wch.cn/products/CH32V006.html",
         "detail": "Selection image https://img.wch.cn/20261015/d270ff05-a617-4587-9a15-1c60263d0777.png"
-      },
-      {
-        "title": "WCH CH32V003 datasheet V1.8, Series Product Naming Rules",
-        "url": "https://www.wch-ic.com/downloads/CH32V003DS0_PDF.html",
-        "detail": "Temperature suffix: 6 = -40..85 °C, 7 = -40..105 °C, 3 = -40..125 °C, D = -40..150 °C"
       }
     ],
     "checkedAt": "2026-11-22"
