@@ -707,9 +707,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -808,9 +808,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -840,7 +840,7 @@
     "cores": 1,
     "mhz": 60,
     "fpu": "none",
-    "flashKB": 448,
+    "flashKB": 192,
     "dataFlashKB": 32,
     "ramKB": 18,
     "package": "LQFP32",
@@ -899,7 +899,7 @@
       "pioc": false
     },
     "notes": [
-      "512 KB FlashROM: 448 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash.",
+      "CodeFlash 192 KB per V2.3 per-part table and Table 2-2 (CH573Q/CH571); FlashROM map 192 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash. The 448 KB / 512 KB feature-list figures apply to CH573X/F.",
       "Fsys up to 60 MHz (§6.3); datasheet states flash is basically zero-wait at 20 MHz (vendor tables list 20 MHz).",
       "BLE 4.2 per datasheet (§19.1) and WCH website; TX programmable -20 to +5 dBm.",
       "Datasheet describes BLE only; proprietary 2.4 GHz mode not documented.",
@@ -911,9 +911,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -1013,9 +1013,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -1116,9 +1116,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -1153,14 +1153,14 @@
     "ramKB": 18,
     "package": "TSSOP16",
     "pins": 16,
-    "packageSize": null,
+    "packageSize": "4.4 mm wide",
     "gpio": 10,
     "vMin": 2.3,
     "vMax": 3.6,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 2,
     "spi": 1,
     "i2c": 0,
@@ -1168,7 +1168,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 4.2, +5 dBm TX, RX sensitivity for TSSOP16 not documented",
+    "radio": "BLE 4.2, +5 dBm TX, RX sensitivity not stated for TSSOP16 (below QFN -96 dBm)",
     "adcBits": 12,
     "adcChannels": 4,
     "dacChannels": 0,
@@ -1177,7 +1177,7 @@
     "touchChannels": 0,
     "timers": "4× 26-bit timers (4 capture), PWM 4+0 (26-bit + 8-bit), watchdog, SysTick",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "none (TCK/TIO pins PB15/PB14 not bonded out)",
     "features": {
       "usbFS": true,
       "usbHS": false,
@@ -1207,20 +1207,23 @@
       "pioc": false
     },
     "notes": [
-      "CH571R (TSSOP16) is not listed in datasheet V1.12 (per-part table, pinouts, package chapter); part data from the 2025 selection guide image.",
-      "Die-level values (60 MHz max Fsys, VDD33 max 3.6 V, AES-128) taken from datasheet V1.12; temperature range, package size and debug pin availability not established.",
       "256 KB FlashROM: 192 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash.",
+      "Fsys up to 60 MHz (§6.3); datasheet states flash is basically zero-wait at 20 MHz (vendor tables list 20 MHz).",
       "CH571 is a reduced CH573: no USB host, no TouchKey, no 8-bit PWM module, 2 fewer UARTs, 256 KB FlashROM total, ADC without DMA, VDD 2.3 V minimum.",
-      "BLE 4.2 per WCH website; datasheet describes BLE only, proprietary 2.4 GHz mode not documented.",
-      "Vendor selection-guide note: CH573Q, CH571R and CH571K have slightly lower RF performance than QFN packages.",
-      "No I2C listed in vendor selection table.",
-      "DC-DC: no on this package (selection guide)."
+      "BLE 4.2 per datasheet (§19.1) and WCH website; TX programmable -20 to +5 dBm.",
+      "Datasheet describes BLE only; proprietary 2.4 GHz mode not documented.",
+      "RX sensitivity: §19.1 gives -96 dBm typical and about -93 dBm for CH573Q/CH571K only; per-part table note says CH571R RF performance is slightly lower than QFN packages.",
+      "No I2C controller (absent from peripheral list and base-address table).",
+      "No standalone DMA controller listed; DMA built into SPI0, USB, TMR1/TMR2 and RF blocks (ADC DMA not supported on CH571).",
+      "DC-DC: no on this package (no VSW pin).",
+      "TSSOP16 bonds PA8, PA9, PA12-PA15, PB10, PB11, PB22, PB23 (RST#): UART0 via remapped TXD0_/RXD0_, UART1, SPI0, USB device, AIN2-AIN5; TCK/TIO not bonded.",
+      "Package added in datasheet V2.0 (2022-09); package table gives 4.4 mm body width, 0.65 mm pitch."
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "CH571R not listed; die-level values only (§6.3 Fsys range, §19 AES, Table 20-2 VDD33 max); copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -1322,9 +1325,9 @@
     ],
     "sources": [
       {
-        "title": "WCH CH573/CH571 datasheet V1.12",
+        "title": "WCH CH573/CH571 datasheet V2.3",
         "url": "https://www.wch-ic.com/downloads/CH573DS1_PDF.html",
-        "detail": "p.1 features and per-part table; §1 pinouts/pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions; Table 2-2 CODE area; §6.3 Fsys range 32 kHz, 2-10 MHz, 15-60 MHz; ch.19 wireless; Tables 20-1/20-2; ch.21 package table; ch.22 revision history; copy supplied by user"
       },
       {
         "title": "WCH CH573 product page (wch.cn) incl. selection guide image",
@@ -1644,6 +1647,91 @@
         "title": "WCH CH583 selection guide image (wch.cn product page)",
         "url": "https://img.wch.cn/20250425/6bc80988-8459-4362-b441-8861c139e94a.jpg",
         "detail": "Per-part table identical to datasheet V1.9"
+      }
+    ],
+    "checkedAt": "2026-11-22"
+  },
+  {
+    "id": "CH581F",
+    "family": "CH581",
+    "line": "CH58x",
+    "status": null,
+    "core": "QingKe RISC-V",
+    "isa": null,
+    "cores": 1,
+    "mhz": null,
+    "fpu": null,
+    "flashKB": 192,
+    "dataFlashKB": 32,
+    "ramKB": 32,
+    "package": "QFN28",
+    "pins": 28,
+    "packageSize": null,
+    "gpio": 20,
+    "vMin": 2.3,
+    "vMax": null,
+    "supplyRanges": null,
+    "usbSupplyRanges": null,
+    "tempMin": null,
+    "tempMax": null,
+    "uart": 2,
+    "spi": 1,
+    "i2c": 0,
+    "i2s": null,
+    "can": null,
+    "usb": "1× USB 2.0 FS Device",
+    "eth": "none",
+    "radio": "BLE 5.3 (TX power and RX sensitivity not stated)",
+    "adcBits": 12,
+    "adcChannels": 6,
+    "dacChannels": null,
+    "opamps": null,
+    "comparators": null,
+    "touchChannels": 0,
+    "timers": "4× 26-bit timers, 10 PWM, watchdog",
+    "dmaChannels": null,
+    "debug": null,
+    "features": {
+      "usbFS": true,
+      "usbHS": false,
+      "usbSS": false,
+      "usbHost": false,
+      "usbDevice": true,
+      "usbPD": null,
+      "ethernet": false,
+      "ethPHY": false,
+      "ble": true,
+      "rf24": null,
+      "can": null,
+      "canFD": null,
+      "adc": true,
+      "dac": null,
+      "opamp": null,
+      "comparator": null,
+      "touch": false,
+      "lcd": false,
+      "sdio": null,
+      "extMem": null,
+      "dvp": null,
+      "i2s": null,
+      "rtc": true,
+      "crypto": null,
+      "lowPower": null,
+      "pioc": null
+    },
+    "notes": [
+      "Listed in WCH Product Selection Manual 2024Q1; dropped from CH583/CH582 datasheet V1.9 (2025) — check availability.",
+      "All values from the manual's BLE MCU tables (CH581 family row and CH581F part row); fields the manual does not cover are null.",
+      "VDD column 2.3/3.3 V (minimum/nominal); maximum not stated.",
+      "Manual lists no TouchKey, no I2C, no segment LCD, no Ethernet; USB is device-only (1*D).",
+      "Manual names the core only as RISC-V on the CH583/CH582/CH581 page (QingKe RISC-V core BLE 5.3 MCU); core version and ISA not stated per part.",
+      "Selection manual lists 20 MHz, which WCH tables use for the near-zero-wait flash clock on CH57x/CH58x (CH582 datasheet allows up to 80 MHz Fsys); max Fsys for CH581F not established."
+    ],
+    "sources": [
+      {
+        "title": "WCH Product Selection Manual 2024Q1",
+        "url": "https://www.wch-ic.com/",
+        "detail": "BLE MCU table, CH581F row; copy supplied by user"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3048,18 +3136,18 @@
     "mhz": 80,
     "fpu": "none",
     "flashKB": 240,
-    "dataFlashKB": null,
+    "dataFlashKB": 0,
     "ramKB": 32,
     "package": "QFN32",
     "pins": 32,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 24,
     "vMin": 1.7,
     "vMax": 3.6,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 4,
     "spi": 1,
     "i2c": 1,
@@ -3067,16 +3155,16 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, +4 dBm TX, -95 dBm RX",
+    "radio": "BLE 5.4 per feature list (5.0 per §19.1), 1M/2M PHY + 2.4 GHz proprietary 1/2 Mbps, +4 dBm TX, -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 14,
     "dacChannels": 0,
     "opamps": 0,
     "comparators": 0,
     "touchChannels": 14,
-    "timers": "4 timers (4 capture), PWM 4+8, 2× ENC",
+    "timers": "4× 26-bit timers (4 capture), PWM 4+8 (26-bit + 8-bit; PWM4-PWM9 also 16-bit), 2-ch encoder, WDT + IWDG, SysTick",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "2-wire SWD (SWCLK/SWDIO on PA13/PA12)",
     "features": {
       "usbFS": true,
       "usbHS": false,
@@ -3106,14 +3194,23 @@
       "pioc": false
     },
     "notes": [
-      "CH595DS1 datasheet V1.1 (2026-03) not retrieved; values from vendor product page and selection guide. Temperature range not established.",
-      "240 KB CodeFlash + 16 KB BootLoader per selection guide; separate DataFlash size not stated. RAM 24+8 KB.",
-      "Product page states near-zero-wait flash at 80 MHz Fsys; absolute max Fsys not stated.",
-      "Also: 20-key KEYSCAN, 2 rotary-encoder (ENC) inputs, LED dot-matrix interface (1/2/4 lines; per-package availability not stated).",
-      "BLE PHY 1M/2M listed; no Coded PHY listed. 2.4 GHz mode with up to 8 kHz report rate.",
-      "Segment LCD 20x4; DC-DC integrated."
+      "256 KB FlashROM: 240 KB CodeFlash + 16 KB BootLoader (may also hold user code) + 256 B user info + 256 B InfoFlash; no DataFlash region in Table 2-2.",
+      "BootLoader download via USB or UART1 (PA8/PA9).",
+      "Fsys up to 80 MHz (PLL range 15-80 MHz); flash near-zero-wait at 80 MHz.",
+      "SRAM 24 KB + 8 KB, both sleep-retainable.",
+      "BLE version: feature list says 5.4, §19.1 says 5.0. PHY 1M/2M only; 2.4 GHz proprietary mode (standard/enhanced frames) up to 8 kHz report rate. TX -24 to +4 dBm.",
+      "Segment LCD 20x4 (COM0-COM3 on PB12-PB15, SEG0-SEG19).",
+      "KEYSCAN on PA4-PA8: 5 I/O, 20 keys (10 matrix + 10 independent).",
+      "LED dot-matrix interface (1/2/4 data lines) and 2-channel rotary encoder input.",
+      "No standalone DMA controller; DMA built into SPI, USB, ADC, TMR1/TMR2, LED and RF blocks.",
+      "DC-DC integrated (VSW pin); VDD33/VIO33 1.7-3.6 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH595 datasheet V1.1",
+        "url": "https://www.wch-ic.com/downloads/CH595DS1_PDF.html",
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions and segment-LCD pin table; Tables 2-2/2-3 CODE area and boot; §6 Fsys range (PLL 15-80 MHz); ch.19 wireless; ch.20 KEYSCAN; Tables 23-1/23-2; ch.24 package table; copy supplied by user"
+      },
       {
         "title": "WCH CH595 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH595.html",
@@ -3138,18 +3235,18 @@
     "mhz": 80,
     "fpu": "none",
     "flashKB": 240,
-    "dataFlashKB": null,
+    "dataFlashKB": 0,
     "ramKB": 32,
     "package": "QFN28",
     "pins": 28,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 20,
     "vMin": 1.7,
     "vMax": 3.6,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 4,
     "spi": 1,
     "i2c": 1,
@@ -3157,16 +3254,16 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, +4 dBm TX, -95 dBm RX",
+    "radio": "BLE 5.4 per feature list (5.0 per §19.1), 1M/2M PHY + 2.4 GHz proprietary 1/2 Mbps, +4 dBm TX, -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 10,
     "dacChannels": 0,
     "opamps": 0,
     "comparators": 0,
     "touchChannels": 10,
-    "timers": "4 timers (4 capture), PWM 4+6, 2× ENC",
+    "timers": "4× 26-bit timers (4 capture), PWM 4+6 (26-bit + 8-bit; PWM4-PWM9 also 16-bit), 2-ch encoder, WDT + IWDG, SysTick",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "2-wire SWD (SWCLK/SWDIO on PA13/PA12)",
     "features": {
       "usbFS": true,
       "usbHS": false,
@@ -3196,14 +3293,23 @@
       "pioc": false
     },
     "notes": [
-      "CH595DS1 datasheet V1.1 (2026-03) not retrieved; values from vendor product page and selection guide. Temperature range not established.",
-      "240 KB CodeFlash + 16 KB BootLoader per selection guide; separate DataFlash size not stated. RAM 24+8 KB.",
-      "Product page states near-zero-wait flash at 80 MHz Fsys; absolute max Fsys not stated.",
-      "Also: 20-key KEYSCAN, 2 rotary-encoder (ENC) inputs, LED dot-matrix interface (1/2/4 lines; per-package availability not stated).",
-      "BLE PHY 1M/2M listed; no Coded PHY listed. 2.4 GHz mode with up to 8 kHz report rate.",
-      "Segment LCD 16x4; DC-DC integrated."
+      "256 KB FlashROM: 240 KB CodeFlash + 16 KB BootLoader (may also hold user code) + 256 B user info + 256 B InfoFlash; no DataFlash region in Table 2-2.",
+      "BootLoader download via USB or UART1 (PA8/PA9).",
+      "Fsys up to 80 MHz (PLL range 15-80 MHz); flash near-zero-wait at 80 MHz.",
+      "SRAM 24 KB + 8 KB, both sleep-retainable.",
+      "BLE version: feature list says 5.4, §19.1 says 5.0. PHY 1M/2M only; 2.4 GHz proprietary mode (standard/enhanced frames) up to 8 kHz report rate. TX -24 to +4 dBm.",
+      "Segment LCD 16x4 (COM0-COM3 on PB12-PB15, SEG0-SEG15).",
+      "KEYSCAN: only PA4, PA5, PA8 of the 5 scan pins (PA4-PA8) are bonded; key count on this package not stated.",
+      "LED dot-matrix interface (1/2/4 data lines) and 2-channel rotary encoder input.",
+      "No standalone DMA controller; DMA built into SPI, USB, ADC, TMR1/TMR2, LED and RF blocks.",
+      "DC-DC integrated (VSW pin); VDD33/VIO33 1.7-3.6 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH595 datasheet V1.1",
+        "url": "https://www.wch-ic.com/downloads/CH595DS1_PDF.html",
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions and segment-LCD pin table; Tables 2-2/2-3 CODE area and boot; §6 Fsys range (PLL 15-80 MHz); ch.19 wireless; ch.20 KEYSCAN; Tables 23-1/23-2; ch.24 package table; copy supplied by user"
+      },
       {
         "title": "WCH CH595 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH595.html",
@@ -3228,18 +3334,18 @@
     "mhz": 80,
     "fpu": "none",
     "flashKB": 240,
-    "dataFlashKB": null,
+    "dataFlashKB": 0,
     "ramKB": 32,
     "package": "QFN20",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "3x3 mm",
     "gpio": 12,
     "vMin": 1.7,
     "vMax": 3.6,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 2,
     "spi": 1,
     "i2c": 1,
@@ -3247,16 +3353,16 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, +4 dBm TX, -95 dBm RX",
+    "radio": "BLE 5.4 per feature list (5.0 per §19.1), 1M/2M PHY + 2.4 GHz proprietary 1/2 Mbps, +4 dBm TX, -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 6,
     "dacChannels": 0,
     "opamps": 0,
     "comparators": 0,
     "touchChannels": 6,
-    "timers": "2 timers (2 capture), PWM 2+3, 2× ENC",
+    "timers": "26-bit timers: 2 usable on this package (2 capture), PWM 2+3 (26-bit + 8-bit), 2-ch encoder, WDT + IWDG, SysTick",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "2-wire SWD (SWCLK/SWDIO on PA13/PA12)",
     "features": {
       "usbFS": true,
       "usbHS": false,
@@ -3286,14 +3392,23 @@
       "pioc": false
     },
     "notes": [
-      "CH595DS1 datasheet V1.1 (2026-03) not retrieved; values from vendor product page and selection guide. Temperature range not established.",
-      "240 KB CodeFlash + 16 KB BootLoader per selection guide; separate DataFlash size not stated. RAM 24+8 KB.",
-      "Product page states near-zero-wait flash at 80 MHz Fsys; absolute max Fsys not stated.",
-      "Also: 20-key KEYSCAN, 2 rotary-encoder (ENC) inputs, LED dot-matrix interface (1/2/4 lines; per-package availability not stated).",
-      "BLE PHY 1M/2M listed; no Coded PHY listed. 2.4 GHz mode with up to 8 kHz report rate.",
-      "Segment LCD 8x4; DC-DC integrated."
+      "256 KB FlashROM: 240 KB CodeFlash + 16 KB BootLoader (may also hold user code) + 256 B user info + 256 B InfoFlash; no DataFlash region in Table 2-2.",
+      "BootLoader download via USB or UART1_ (PB12/PB13).",
+      "Fsys up to 80 MHz (PLL range 15-80 MHz); flash near-zero-wait at 80 MHz.",
+      "SRAM 24 KB + 8 KB, both sleep-retainable.",
+      "BLE version: feature list says 5.4, §19.1 says 5.0. PHY 1M/2M only; 2.4 GHz proprietary mode (standard/enhanced frames) up to 8 kHz report rate. TX -24 to +4 dBm.",
+      "Segment LCD 8x4 (COM0-COM3 on PB12-PB15, SEG6-SEG11/SEG14-SEG15).",
+      "KEYSCAN not usable: scan pins PA4-PA8 not bonded.",
+      "LED dot-matrix interface (1/2/4 data lines) and 2-channel rotary encoder input.",
+      "No standalone DMA controller; DMA built into SPI, USB, ADC, TMR1/TMR2, LED and RF blocks.",
+      "DC-DC integrated (VSW pin); VDD33/VIO33 1.7-3.6 V."
     ],
     "sources": [
+      {
+        "title": "WCH CH595 datasheet V1.1",
+        "url": "https://www.wch-ic.com/downloads/CH595DS1_PDF.html",
+        "detail": "p.1 features and per-part table; §1.1 pinouts, §1.2 pin definitions and segment-LCD pin table; Tables 2-2/2-3 CODE area and boot; §6 Fsys range (PLL 15-80 MHz); ch.19 wireless; ch.20 KEYSCAN; Tables 23-1/23-2; ch.24 package table; copy supplied by user"
+      },
       {
         "title": "WCH CH595 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH595.html",
@@ -3322,14 +3437,14 @@
     "ramKB": 32,
     "package": "QFN20",
     "pins": 20,
-    "packageSize": null,
+    "packageSize": "3x3 mm",
     "gpio": 15,
     "vMin": 1.2,
     "vMax": 1.8,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 2,
     "spi": 1,
     "i2c": 1,
@@ -3337,16 +3452,16 @@
     "can": 0,
     "usb": "none",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz mode, +4 dBm TX, -95 dBm RX",
+    "radio": "BLE 5.4 per feature list (5.0 per §17.1), 1M/2M PHY + 2.4 GHz proprietary 1/2 Mbps, +4 dBm TX, -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 8,
     "dacChannels": 0,
     "opamps": 0,
     "comparators": 0,
     "touchChannels": 8,
-    "timers": "3 timers (3 capture), PWM 3+4, 2× ENC",
+    "timers": "3× 26-bit timers (3 capture), PWM 3+4 (26-bit + 8-bit; first 3 8-bit channels also 16-bit), 2-ch encoder, WDT + IWDG, SysTick",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "2-wire SWD (SWCLK/SWDIO on PA13/PA12)",
     "features": {
       "usbFS": false,
       "usbHS": false,
@@ -3376,14 +3491,24 @@
       "pioc": false
     },
     "notes": [
-      "CH596DS1 datasheet V1.1 (2026-03) not retrieved; values from vendor product page and selection guide. Temperature range not established.",
-      "Supply 1.2-1.8 V (single 1.5 V cell, no inductor required).",
-      "240 KB CodeFlash + 16 KB BootLoader per selection guide; separate DataFlash size not stated. RAM 24+8 KB.",
-      "Product page states near-zero-wait flash at 80 MHz Fsys; absolute max Fsys not stated.",
-      "No USB listed in product features or selection guide.",
-      "LED dot-matrix interface (1/2/4 data lines); 4 GPIOs 5 V tolerant."
+      "Supply 1.2-1.8 V on VDD15/VIO15 (Table 20-2; abs. max 2.2 V), for a single 1.5 V cell; no DC-DC/VSW pin.",
+      "I/O at VIO15 level; PB12-PB15 5 V tolerant.",
+      "FlashROM: 240 KB CodeFlash + 16 KB at 0x3C000 + 256 B user info + 256 B InfoFlash. Feature list calls the 16 KB area BootLoader (usable for user code); English Table 2-2 labels it DataFlash. Separate DataFlash not established.",
+      "BootLoader download via UART1_ (PB12/PB13).",
+      "Fsys up to 80 MHz (PLL range 15-80 MHz); flash basically zero-wait at 80 MHz.",
+      "SRAM 24 KB + 8 KB, both sleep-retainable.",
+      "BLE version: feature list says 5.4, §17.1 says 5.0. PHY 1M/2M only; 2.4 GHz proprietary mode (standard/enhanced frames) up to 8 kHz report rate. TX -24 to +4 dBm.",
+      "No USB (PB10/PB11 have no UD+/UD- function), no segment LCD, no KEYSCAN.",
+      "LED dot-matrix interface (1/2/4 data lines) and 2-channel rotary encoder input.",
+      "ADC single-ended input only.",
+      "No standalone DMA controller; DMA built into SPI, ADC, TMR1/TMR2, LED and RF blocks."
     ],
     "sources": [
+      {
+        "title": "WCH CH596 datasheet V1.1",
+        "url": "https://www.wch-ic.com/downloads/CH596DS1_PDF.html",
+        "detail": "p.1 features and per-part table; §1.1 pinout, §1.2 pin definitions; Tables 2-2/2-3 CODE area and boot; ch.6 Fsys range (PLL 15-80 MHz); ch.17 wireless; Tables 20-1/20-2; ch.21 package table; copy supplied by user"
+      },
       {
         "title": "WCH CH596 product page (wch-ic.com)",
         "url": "https://www.wch-ic.com/products/CH596.html",

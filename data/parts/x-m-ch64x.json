@@ -3145,7 +3145,7 @@
     "fpu": "none",
     "flashKB": 224,
     "dataFlashKB": null,
-    "ramKB": null,
+    "ramKB": 80,
     "package": "QFN68",
     "pins": 68,
     "packageSize": null,
@@ -3204,7 +3204,7 @@
     "notes": [
       "No public datasheet found (2026-11-22); data from product page and selection images only.",
       "8 USB 2.0 HS PHYs; up to 8 host and 4 device ports; built-in USB compound device: 4-channel compound device with 4 HUBs; SerDes-based isolated/long-distance USB PHY.",
-      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page), 72-80 KB (selection image) and 48 KB (series table); ramKB left null.",
+      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page; 2024Q1 selection manual family row and block diagram), 72-80 KB (selection image; 2024Q1 manual per-part table) and 48 KB (wch.cn series table); ramKB 80 from 2024Q1 selection manual.",
       "Core QingKe V4C; ISA, temperature range and package body size not published.",
       "Ordering code has no temperature suffix."
     ],
@@ -3218,6 +3218,11 @@
         "title": "WCH RISC-V special-application series selection table (wch.cn, category 75)",
         "url": "https://www.wch.cn/api/official/website/productTables/product?categoryId=75",
         "detail": "CH645 row: 125 MHz, 224K flash, 48K RAM, VDD 3.0-3.6, no ADC, QFN68/QFN32"
+      },
+      {
+        "title": "WCH Product Selection Manual 2024Q1",
+        "url": "https://www.wch-ic.com/",
+        "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3234,7 +3239,7 @@
     "fpu": "none",
     "flashKB": 224,
     "dataFlashKB": null,
-    "ramKB": null,
+    "ramKB": 80,
     "package": "QFN32",
     "pins": 32,
     "packageSize": null,
@@ -3293,9 +3298,10 @@
     "notes": [
       "No public datasheet found (2026-11-22); data from product page and selection images only.",
       "5 USB 2.0 HS PHYs; up to 5 host and 1 device ports; built-in USB compound device: 1 HUB; SerDes-based isolated/long-distance USB PHY.",
-      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page), 72-80 KB (selection image) and 48 KB (series table); ramKB left null.",
+      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page; 2024Q1 selection manual family row and block diagram), 72-80 KB (selection image; 2024Q1 manual per-part table) and 48 KB (wch.cn series table); ramKB 80 from 2024Q1 selection manual.",
       "Core QingKe V4C; ISA, temperature range and package body size not published.",
-      "Ordering code has no temperature suffix."
+      "Ordering code has no temperature suffix.",
+      "2024Q1 selection manual per-part table lists USB as '5*H/4*D (480Mbps)' (CH645W: '8*H/28*D')."
     ],
     "sources": [
       {
@@ -3307,6 +3313,11 @@
         "title": "WCH RISC-V special-application series selection table (wch.cn, category 75)",
         "url": "https://www.wch.cn/api/official/website/productTables/product?categoryId=75",
         "detail": "CH645 row: 125 MHz, 224K flash, 48K RAM, VDD 3.0-3.6, no ADC, QFN68/QFN32"
+      },
+      {
+        "title": "WCH Product Selection Manual 2024Q1",
+        "url": "https://www.wch-ic.com/",
+        "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3323,7 +3334,7 @@
     "fpu": "none",
     "flashKB": 224,
     "dataFlashKB": null,
-    "ramKB": null,
+    "ramKB": 80,
     "package": "QFN32",
     "pins": 32,
     "packageSize": null,
@@ -3382,9 +3393,10 @@
     "notes": [
       "No public datasheet found (2026-11-22); data from product page and selection images only.",
       "8 USB 2.0 HS PHYs; up to 8 host and 4 device ports; built-in USB compound device: 4-channel compound device with 4 HUBs; SerDes-based isolated/long-distance USB PHY.",
-      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page), 72-80 KB (selection image) and 48 KB (series table); ramKB left null.",
+      "Flash 224 KB program + 28 KB BootLoader. SRAM listed as 80 KB (product page; 2024Q1 selection manual family row and block diagram), 72-80 KB (selection image; 2024Q1 manual per-part table) and 48 KB (wch.cn series table); ramKB 80 from 2024Q1 selection manual.",
       "Core QingKe V4C; ISA, temperature range and package body size not published.",
-      "Ordering code has no temperature suffix."
+      "Ordering code has no temperature suffix.",
+      "Not listed in 2024Q1 selection manual (only CH645W QFN68 and CH645F QFN32); ramKB taken from its CH645 family row."
     ],
     "sources": [
       {
@@ -3396,6 +3408,11 @@
         "title": "WCH RISC-V special-application series selection table (wch.cn, category 75)",
         "url": "https://www.wch.cn/api/official/website/productTables/product?categoryId=75",
         "detail": "CH645 row: 125 MHz, 224K flash, 48K RAM, VDD 3.0-3.6, no ADC, QFN68/QFN32"
+      },
+      {
+        "title": "WCH Product Selection Manual 2024Q1",
+        "url": "https://www.wch-ic.com/",
+        "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
       }
     ],
     "checkedAt": "2026-11-22"
