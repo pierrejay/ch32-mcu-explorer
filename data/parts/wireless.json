@@ -657,7 +657,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M)",
+    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M) + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 10,
     "dacChannels": 0,
@@ -677,7 +677,7 @@
       "ethernet": false,
       "ethPHY": false,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": false,
       "canFD": false,
       "adc": true,
@@ -703,7 +703,8 @@
       "No I2C controller (absent from peripheral list and base-address table).",
       "No standalone DMA controller listed; DMA built into SPI0, USB, ADC, TMR1/TMR2 and RF blocks.",
       "VIN5 pin: 5 V input (4.5-5.3 V) regulated internally to VIO33; VDD33 1.7-3.6 V.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -725,6 +726,11 @@
         "title": "WCH website selection table, RISC-V Bluetooth wireless (category 74)",
         "url": "https://www.wch-ic.com/api/official/website/productTables/product?categoryId=74",
         "detail": "CH573/CH571 rows: BLE 4.2, 20 MHz, DataFlash 32K, UART/SPI/IIC 4/1/- and 2/1/-"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://file.wch.cn/download/file?id=337",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -759,7 +765,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M)",
+    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M) + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 8,
     "dacChannels": 0,
@@ -779,7 +785,7 @@
       "ethernet": false,
       "ethPHY": false,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": false,
       "canFD": false,
       "adc": true,
@@ -804,7 +810,8 @@
       "Datasheet describes BLE only; proprietary 2.4 GHz mode not documented.",
       "No I2C controller (absent from peripheral list and base-address table).",
       "No standalone DMA controller listed; DMA built into SPI0, USB, ADC, TMR1/TMR2 and RF blocks.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -826,6 +833,11 @@
         "title": "WCH website selection table, RISC-V Bluetooth wireless (category 74)",
         "url": "https://www.wch-ic.com/api/official/website/productTables/product?categoryId=74",
         "detail": "CH573/CH571 rows: BLE 4.2, 20 MHz, DataFlash 32K, UART/SPI/IIC 4/1/- and 2/1/-"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://file.wch.cn/download/file?id=337",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -860,7 +872,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 4.2, +5 dBm TX, -93 dBm RX (1M)",
+    "radio": "BLE 4.2, +5 dBm TX, -93 dBm RX (1M) + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 10,
     "dacChannels": 0,
@@ -880,7 +892,7 @@
       "ethernet": false,
       "ethPHY": false,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": false,
       "canFD": false,
       "adc": true,
@@ -907,7 +919,8 @@
       "No standalone DMA controller listed; DMA built into SPI0, USB, ADC, TMR1/TMR2 and RF blocks.",
       "RX sensitivity -93 dBm on CH573Q (package-limited, §19.1).",
       "LQFP32 pinout includes a VIN5 pin, but Table 20-2 gives the VIN5 range for CH573X only.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -929,6 +942,11 @@
         "title": "WCH website selection table, RISC-V Bluetooth wireless (category 74)",
         "url": "https://www.wch-ic.com/api/official/website/productTables/product?categoryId=74",
         "detail": "CH573/CH571 rows: BLE 4.2, 20 MHz, DataFlash 32K, UART/SPI/IIC 4/1/- and 2/1/-"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://file.wch.cn/download/file?id=337",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -963,7 +981,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M)",
+    "radio": "BLE 4.2, +5 dBm TX, -96 dBm RX (1M) + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 6,
     "dacChannels": 0,
@@ -983,7 +1001,7 @@
       "ethernet": false,
       "ethPHY": false,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": false,
       "canFD": false,
       "adc": true,
@@ -1009,7 +1027,8 @@
       "Datasheet describes BLE only; proprietary 2.4 GHz mode not documented.",
       "No I2C controller (absent from peripheral list and base-address table).",
       "No standalone DMA controller listed; DMA built into SPI0, USB, TMR1/TMR2 and RF blocks (ADC DMA not supported on CH571).",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -1031,6 +1050,11 @@
         "title": "WCH website selection table, RISC-V Bluetooth wireless (category 74)",
         "url": "https://www.wch-ic.com/api/official/website/productTables/product?categoryId=74",
         "detail": "CH573/CH571 rows: BLE 4.2, 20 MHz, DataFlash 32K, UART/SPI/IIC 4/1/- and 2/1/-"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://file.wch.cn/download/file?id=337",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1153,7 +1177,7 @@
     "ramKB": 18,
     "package": "TSSOP16",
     "pins": 16,
-    "packageSize": "4.4 mm wide",
+    "packageSize": "4.4x5.0 mm",
     "gpio": 10,
     "vMin": 2.3,
     "vMax": 3.6,
@@ -1258,7 +1282,7 @@
     "ramKB": 18,
     "package": "ESSOP10",
     "pins": 10,
-    "packageSize": "3.9 mm wide",
+    "packageSize": "3.9x5.0 mm",
     "gpio": 4,
     "vMin": 2.3,
     "vMax": 3.6,
@@ -1656,24 +1680,24 @@
     "family": "CH581",
     "line": "CH58x",
     "status": null,
-    "core": "QingKe RISC-V",
-    "isa": null,
+    "core": "QingKe V4A",
+    "isa": "RV32IMAC",
     "cores": 1,
-    "mhz": null,
-    "fpu": null,
+    "mhz": 80,
+    "fpu": "none",
     "flashKB": 192,
     "dataFlashKB": 32,
     "ramKB": 32,
     "package": "QFN28",
     "pins": 28,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 20,
     "vMin": 2.3,
-    "vMax": null,
+    "vMax": 3.6,
     "supplyRanges": null,
     "usbSupplyRanges": null,
-    "tempMin": null,
-    "tempMax": null,
+    "tempMin": -40,
+    "tempMax": 85,
     "uart": 2,
     "spi": 1,
     "i2c": 0,
@@ -1690,7 +1714,7 @@
     "touchChannels": 0,
     "timers": "4× 26-bit timers, 10 PWM, watchdog",
     "dmaChannels": null,
-    "debug": null,
+    "debug": "2-wire SDI (TCK/TIO)",
     "features": {
       "usbFS": true,
       "usbHS": false,
@@ -1715,8 +1739,8 @@
       "dvp": null,
       "i2s": null,
       "rtc": true,
-      "crypto": null,
-      "lowPower": null,
+      "crypto": true,
+      "lowPower": true,
       "pioc": null
     },
     "notes": [
@@ -1724,14 +1748,100 @@
       "All values from the manual's BLE MCU tables (CH581 family row and CH581F part row); fields the manual does not cover are null.",
       "VDD column 2.3/3.3 V (minimum/nominal); maximum not stated.",
       "Manual lists no TouchKey, no I2C, no segment LCD, no Ethernet; USB is device-only (1*D).",
-      "Manual names the core only as RISC-V on the CH583/CH582/CH581 page (QingKe RISC-V core BLE 5.3 MCU); core version and ISA not stated per part.",
-      "Selection manual lists 20 MHz, which WCH tables use for the near-zero-wait flash clock on CH57x/CH58x (CH582 datasheet allows up to 80 MHz Fsys); max Fsys for CH581F not established."
+      "CH583/582/581 datasheet V1.8 (2023-12-27) lists CH581F and refers to CH582 specs outside the listed differences; 80 MHz max Fsys, 20 MHz in vendor tables is the near-zero-wait flash clock."
     ],
     "sources": [
+      {
+        "title": "WCH CH583/CH582/CH581 datasheet V1.8",
+        "url": "https://atta.szlcsc.com/upload/public/pdf/source/20240313/595E3546786C4B163F01F15F9C95B3C9.pdf",
+        "detail": "pp. 1-3, §6.3, Tables 20-1/20-2, package table; WCH PDF hosted by LCSC"
+      },
       {
         "title": "WCH Product Selection Manual 2024Q1",
         "url": "https://www.wch-ic.com/",
         "detail": "BLE MCU table, CH581F row; copy supplied by user"
+      }
+    ],
+    "checkedAt": "2026-11-22"
+  },
+  {
+    "id": "CH581M",
+    "family": "CH581",
+    "line": "CH58x",
+    "status": null,
+    "core": "QingKe RISC-V (version not stated)",
+    "isa": null,
+    "cores": 1,
+    "mhz": 78,
+    "fpu": null,
+    "flashKB": 448,
+    "dataFlashKB": 32,
+    "ramKB": 96,
+    "package": "QFN48",
+    "pins": 48,
+    "packageSize": null,
+    "gpio": 39,
+    "vMin": 2.5,
+    "vMax": null,
+    "supplyRanges": null,
+    "usbSupplyRanges": null,
+    "tempMin": null,
+    "tempMax": null,
+    "uart": 4,
+    "spi": 1,
+    "i2c": 1,
+    "i2s": null,
+    "can": null,
+    "usb": "1× USB FS",
+    "eth": "none",
+    "radio": "BLE 5.4",
+    "adcBits": 12,
+    "adcChannels": 14,
+    "dacChannels": null,
+    "opamps": null,
+    "comparators": null,
+    "touchChannels": 14,
+    "timers": "4× 26-bit timers, 12 PWM",
+    "dmaChannels": null,
+    "debug": null,
+    "features": {
+      "usbFS": true,
+      "usbHS": false,
+      "usbSS": false,
+      "usbHost": null,
+      "usbDevice": null,
+      "usbPD": null,
+      "ethernet": false,
+      "ethPHY": false,
+      "ble": true,
+      "rf24": null,
+      "can": null,
+      "canFD": null,
+      "adc": true,
+      "dac": null,
+      "opamp": null,
+      "comparator": null,
+      "touch": true,
+      "lcd": false,
+      "sdio": null,
+      "extMem": null,
+      "dvp": null,
+      "i2s": null,
+      "rtc": null,
+      "crypto": null,
+      "lowPower": null,
+      "pioc": null
+    },
+    "notes": [
+      "Listed only in the Dec-2025 WCH selection guide, in the CH585/CH584 table (448K CodeFlash, 96K SRAM, 32K DataFlash, BLE 5.4, NFC, 39 GPIO, VDD 2.5/3.3 V); no datasheet seen.",
+      "Different chip from CH581F (CH582 variant) despite the shared family name; resources match CH584M minus segment LCD.",
+      "NFC listed in the guide row; LED matrix interface (1/2/4/8) listed."
+    ],
+    "sources": [
+      {
+        "title": "WCH product selection guide (Dec 2025)",
+        "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
+        "detail": "p. 31, CH585/CH584 table, CH581M row; WCH PDF hosted by a distributor"
       }
     ],
     "checkedAt": "2026-11-22"

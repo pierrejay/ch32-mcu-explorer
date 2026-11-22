@@ -1305,6 +1305,11 @@
     ],
     "sources": [
       {
+        "title": "WCH CH569/CH565 datasheet V1.3 (2024-10-15)",
+        "url": "https://file.wch.cn/download/file?id=329",
+        "detail": "Table 1-1; Table 19-1 confirms -20..85 °C"
+      },
+      {
         "title": "WCH CH569/CH565 datasheet V1.2 (EN, CH569DS1)",
         "url": "https://github.com/kelu124/rp569/blob/main/datasheet/CH569DS1.pdf",
         "detail": "Mirror of the vendor PDF listed at https://www.wch-ic.com/downloads/CH569DS1_PDF.html. Features page; Table 1-1 CH569/CH565 comparison; §2.1 memory (RAMX/ROM split); Table 19-1/19-2 ratings and supplies; Ch.20 packages."
@@ -1403,6 +1408,11 @@
       "BUS8 active parallel port: 8-bit data, 15-bit address."
     ],
     "sources": [
+      {
+        "title": "WCH CH569/CH565 datasheet V1.3 (2024-10-15)",
+        "url": "https://file.wch.cn/download/file?id=329",
+        "detail": "Table 1-1; Table 19-1 confirms -20..85 °C"
+      },
       {
         "title": "WCH CH569/CH565 datasheet V1.2 (EN, CH569DS1)",
         "url": "https://github.com/kelu124/rp569/blob/main/datasheet/CH569DS1.pdf",
@@ -1511,6 +1521,11 @@
         "title": "WCH Product Selection Manual, Dec 2025 (EN, '产品选型手册-2512-英文')",
         "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
         "detail": "Vendor selection guide (distributor-hosted copy); CH564 and CH569/5 model selection tables (pp. 25-26)."
+      },
+      {
+        "title": "WCH CH569/CH565 datasheet V1.3 (2024-10-15)",
+        "url": "https://file.wch.cn/download/file?id=329",
+        "detail": "CH565M not listed in Table 1-1 of V1.3"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1548,6 +1563,10 @@
       [
         3.2,
         3.4
+      ],
+      [
+        4.0,
+        5.25
       ]
     ],
     "tempMin": -40,
@@ -1600,7 +1619,7 @@
     "notes": [
       "SRAM 64/96/128 KB configurable via user option against the zero-wait code area (80/48/16 KB zero-wait); ramKB is the maximum.",
       "ICache 16 KB; BootLoader 32 KB; DataFlash 32 KB.",
-      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.7-3.6 V; some pins 5 V tolerant.",
+      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.1-3.6 V; some pins 5 V tolerant.",
       "Low-power modes: Sleep and Deep sleep.",
       "Also has an 8-bit passive parallel port (SLV); UART0 supports MODEM signals; UARTs up to 12 Mbps.",
       "CodeFlash: datasheet V1.0 lists 192 KB; Dec-2025 selection guide lists 448 KB for CH564L/Q/F (192 KB for CH564C). Newest document used.",
@@ -1616,6 +1635,11 @@
         "title": "WCH Product Selection Manual, Dec 2025 (EN, '产品选型手册-2512-英文')",
         "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
         "detail": "Vendor selection guide (distributor-hosted copy); CH564 and CH569/5 model selection tables (pp. 25-26)."
+      },
+      {
+        "title": "WCH CH564 datasheet V1.4",
+        "url": "https://file.wch.cn/download/file?id=488",
+        "detail": "§1.4.3, Tables 2-1, 3-2 (supply, V5 option)"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1653,6 +1677,10 @@
       [
         3.2,
         3.4
+      ],
+      [
+        4.0,
+        5.25
       ]
     ],
     "tempMin": -40,
@@ -1705,7 +1733,7 @@
     "notes": [
       "SRAM 64/96/128 KB configurable via user option against the zero-wait code area (80/48/16 KB zero-wait); ramKB is the maximum.",
       "ICache 16 KB; BootLoader 32 KB; DataFlash 32 KB.",
-      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.7-3.6 V; some pins 5 V tolerant.",
+      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.1-3.6 V; some pins 5 V tolerant.",
       "Low-power modes: Sleep and Deep sleep.",
       "Also has an 8-bit passive parallel port (SLV); UART0 supports MODEM signals; UARTs up to 12 Mbps.",
       "CodeFlash: datasheet V1.0 lists 192 KB; Dec-2025 selection guide lists 448 KB for CH564L/Q/F (192 KB for CH564C). Newest document used.",
@@ -1721,6 +1749,11 @@
         "title": "WCH Product Selection Manual, Dec 2025 (EN, '产品选型手册-2512-英文')",
         "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
         "detail": "Vendor selection guide (distributor-hosted copy); CH564 and CH569/5 model selection tables (pp. 25-26)."
+      },
+      {
+        "title": "WCH CH564 datasheet V1.4",
+        "url": "https://file.wch.cn/download/file?id=488",
+        "detail": "§1.4.3, Tables 2-1, 3-2 (supply, V5 option)"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1738,17 +1771,30 @@
     "flashKB": 448,
     "dataFlashKB": 32,
     "ramKB": 128,
-    "package": "QFN28",
-    "pins": 28,
+    "package": "QFN32",
+    "pins": 32,
     "packageSize": "4x4 mm",
     "gpio": 20,
     "vMin": 3.0,
-    "vMax": 3.6,
-    "supplyRanges": null,
+    "vMax": 5.25,
+    "supplyRanges": [
+      [
+        3.0,
+        3.6
+      ],
+      [
+        4.0,
+        5.25
+      ]
+    ],
     "usbSupplyRanges": [
       [
         3.2,
         3.4
+      ],
+      [
+        4.0,
+        5.25
       ]
     ],
     "tempMin": -40,
@@ -1801,14 +1847,20 @@
     "notes": [
       "SRAM 64/96/128 KB configurable via user option against the zero-wait code area (80/48/16 KB zero-wait); ramKB is the maximum.",
       "ICache 16 KB; BootLoader 32 KB; DataFlash 32 KB.",
-      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.7-3.6 V; some pins 5 V tolerant.",
+      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.1-3.6 V; some pins 5 V tolerant.",
       "Low-power modes: Sleep and Deep sleep.",
       "Also has an 8-bit passive parallel port (SLV); UART0 supports MODEM signals; UARTs up to 12 Mbps.",
       "CodeFlash: datasheet V1.0 lists 192 KB; Dec-2025 selection guide lists 448 KB for CH564L/Q/F (192 KB for CH564C). Newest document used.",
-      "Not in CH564 datasheet V1.0; temperature range taken from that datasheet's family TA (-40 to 85 °C); package pinout and supply pins not yet available in a vendor datasheet.",
-      "Earlier (Jul-2024) WCH selection manual listed CH564F with 192 KB flash and 16 GPIO."
+      "Covered by CH564 datasheet V1.4 (2025-05-13); V5 pin bonded (F pin 1, C pin 2).",
+      "Earlier (Jul-2024) WCH selection manual listed CH564F with 192 KB flash and 16 GPIO.",
+      "Package QFN32 per datasheet V1.4 resource, pinout and ordering tables; Dec-2025 selection guide says QFN28."
     ],
     "sources": [
+      {
+        "title": "WCH CH564 datasheet V1.4",
+        "url": "https://file.wch.cn/download/file?id=488",
+        "detail": "§1.4.3, §2.1, §4.3, Tables 2-1, 3-2"
+      },
       {
         "title": "WCH Product Selection Manual, Dec 2025 (EN, '产品选型手册-2512-英文')",
         "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
@@ -1840,12 +1892,25 @@
     "packageSize": "3x3 mm",
     "gpio": 17,
     "vMin": 3.0,
-    "vMax": 3.6,
-    "supplyRanges": null,
+    "vMax": 5.25,
+    "supplyRanges": [
+      [
+        3.0,
+        3.6
+      ],
+      [
+        4.0,
+        5.25
+      ]
+    ],
     "usbSupplyRanges": [
       [
         3.2,
         3.4
+      ],
+      [
+        4.0,
+        5.25
       ]
     ],
     "tempMin": -40,
@@ -1898,13 +1963,18 @@
     "notes": [
       "SRAM 64/96/128 KB configurable via user option against the zero-wait code area (80/48/16 KB zero-wait); ramKB is the maximum.",
       "ICache 16 KB; BootLoader 32 KB; DataFlash 32 KB.",
-      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.7-3.6 V; some pins 5 V tolerant.",
+      "Supply: single 3.3 V on VDD33 (3.0-3.6 V; 3.2-3.4 V when USB or Ethernet is used) or single 5 V on V5 (4.0-5.25 V, internal 3.3 V regulator) where the V5 pin exists; GPIO supply VDDIO 1.1-3.6 V; some pins 5 V tolerant.",
       "Low-power modes: Sleep and Deep sleep.",
       "Also has an 8-bit passive parallel port (SLV); UART0 supports MODEM signals; UARTs up to 12 Mbps.",
-      "Not in CH564 datasheet V1.0; temperature range taken from that datasheet's family TA (-40 to 85 °C); package pinout and supply pins not yet available in a vendor datasheet.",
+      "Covered by CH564 datasheet V1.4 (2025-05-13); V5 pin bonded (F pin 1, C pin 2).",
       "No Ethernet on this part per the Dec-2025 selection guide."
     ],
     "sources": [
+      {
+        "title": "WCH CH564 datasheet V1.4",
+        "url": "https://file.wch.cn/download/file?id=488",
+        "detail": "§1.4.3, §2.1, §4.3, Tables 2-1, 3-2"
+      },
       {
         "title": "WCH Product Selection Manual, Dec 2025 (EN, '产品选型手册-2512-英文')",
         "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",

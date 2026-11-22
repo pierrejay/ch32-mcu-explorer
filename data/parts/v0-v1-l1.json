@@ -55,7 +55,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -71,7 +71,8 @@
       "16 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 17 KB (likely counts part of the 1920 B BootLoader area).",
       "VDD 2.7-5.5 V without ADC, 2.8-5.5 V recommended when using the ADC.",
       "The OPA can be configured as a comparator (output to GPIO or TIM2); there is no separate comparator.",
-      "64 B user-defined option area; no separate data flash."
+      "64 B user-defined option area; no separate data flash.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -143,7 +144,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -159,7 +160,8 @@
       "16 KB CodeFlash per datasheet V1.8; Oct-2026 selection table lists 17 KB (likely counts part of the 1920 B BootLoader area).",
       "VDD 2.7-5.5 V without ADC, 2.8-5.5 V recommended when using the ADC.",
       "The OPA can be configured as a comparator (output to GPIO or TIM2); there is no separate comparator.",
-      "64 B user-defined option area; no separate data flash."
+      "64 B user-defined option area; no separate data flash.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -231,7 +233,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -248,7 +250,8 @@
       "VDD 2.7-5.5 V without ADC, 2.8-5.5 V recommended when using the ADC.",
       "The OPA can be configured as a comparator (output to GPIO or TIM2); there is no separate comparator.",
       "64 B user-defined option area; no separate data flash.",
-      "SPI not available on this package (SPI pins not bonded)."
+      "SPI not available on this package (SPI pins not bonded).",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -320,7 +323,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -337,7 +340,8 @@
       "VDD 2.7-5.5 V without ADC, 2.8-5.5 V recommended when using the ADC.",
       "The OPA can be configured as a comparator (output to GPIO or TIM2); there is no separate comparator.",
       "64 B user-defined option area; no separate data flash.",
-      "SPI not available on this package (SPI pins not bonded)."
+      "SPI not available on this package (SPI pins not bonded).",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1015,7 +1019,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1031,7 +1035,8 @@
       "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
-      "256 B user-defined info area; no separate data flash."
+      "256 B user-defined info area; no separate data flash.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1103,7 +1108,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1119,7 +1124,8 @@
       "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
-      "256 B user-defined info area; no separate data flash."
+      "256 B user-defined info area; no separate data flash.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1191,7 +1197,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1207,7 +1213,8 @@
       "32 KB CodeFlash per datasheet V2.0; Oct-2026 selection table lists 35 KB (adds the 3328 B BootLoader area).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
-      "256 B user-defined info area; no separate data flash."
+      "256 B user-defined info area; no separate data flash.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1279,7 +1286,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1296,7 +1303,8 @@
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "OPA can operate as PGA or comparator; no separate comparator.",
       "256 B user-defined info area; no separate data flash.",
-      "SPI not available on this package per datasheet resource table."
+      "SPI not available on this package per datasheet resource table.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1368,7 +1376,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1384,7 +1392,8 @@
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1461,7 +1470,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1476,7 +1485,8 @@
     "notes": [
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
-      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
+      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1548,7 +1558,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1563,7 +1573,8 @@
     "notes": [
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
-      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
+      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1635,7 +1646,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1650,7 +1661,8 @@
     "notes": [
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
-      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
+      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1722,7 +1734,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1738,7 +1750,8 @@
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1815,7 +1828,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1830,7 +1843,8 @@
     "notes": [
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
-      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
+      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1902,7 +1916,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -1918,7 +1932,8 @@
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table."
+      "Listed in datasheet V1.8 ordering table; not listed in datasheet V2.0 resource/ordering tables nor in the Oct-2026 WCH selection table.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -1995,7 +2010,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -2010,7 +2025,8 @@
     "notes": [
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
-      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator."
+      "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -2168,7 +2184,7 @@
       "adc": true,
       "dac": false,
       "opamp": true,
-      "comparator": false,
+      "comparator": true,
       "touch": true,
       "lcd": false,
       "sdio": false,
@@ -2184,7 +2200,8 @@
       "62 KB CodeFlash per datasheet V2.0; product page and Oct-2026 selection table list 65 KB (adds the 3328 B BootLoader area, usable as code via WCH-LinkUtility per datasheet).",
       "VDD 2.0-5.5 V without ADC, 2.4-5.5 V with ADC; ADC sampling above 1 Msps needs VDD 4.5-5.5 V.",
       "One OPA/PGA usable as comparator; P input supports 3-channel polling; no separate comparator.",
-      "SPI not available on this package per datasheet resource table."
+      "SPI not available on this package per datasheet resource table.",
+      "No dedicated comparator; the OPA has a documented comparator mode."
     ],
     "sources": [
       {
@@ -2627,7 +2644,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash."
     ],
@@ -2720,7 +2737,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash.",
       "Integrated switchable ~5.1 kΩ Rd pull-down on CC per datasheet."
@@ -2754,7 +2771,7 @@
     "ramKB": 20,
     "package": "QFN32",
     "pins": 32,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 31,
     "vMin": 1.8,
     "vMax": 3.6,
@@ -2814,7 +2831,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash.",
       "Only in the June-2026 selection table (not in datasheet V1.8); same resources as K8U6 except -40..105 °C and no CAN FD per that table; package size not verified."
@@ -2908,7 +2925,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash."
     ],
@@ -3001,7 +3018,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash.",
       "Integrated switchable ~5.1 kΩ Rd pull-down on CC per datasheet.",
@@ -3096,7 +3113,7 @@
     },
     "notes": [
       "USB PD / Type-C controller and PHY on chip (DRP, Source, Sink; PDUSB).",
-      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; VDDA 2.4-3.6 V when using the ADC.",
+      "VDD 1.8-3.6 V; USB requires 3.0-3.6 V; ADC needs VDDA 1.8-3.6 V below 200 kHz sampling, 3.0-3.6 V at 2.4 MHz (datasheet V2.1 Table 3-29).",
       "CAN FD: June-2026 selection table marks CAN FD only on C8T6 and K8U6; datasheet V1.8 describes CAN FD support for the family.",
       "EN product page states 62 KB Flash; datasheet V1.8 and selection tables state 64 KB CodeFlash.",
       "USB Device only on this package (no Host)."
@@ -3111,6 +3128,93 @@
         "title": "WCH CH32L103 product page and selection table (2026-06)",
         "url": "https://www.wch.cn/products/CH32L103.html",
         "detail": "Selection image https://img.wch.cn/20260606/89a591c4-272f-4afd-a469-299be56a08ce.png: per-part GPIO/ADC/TouchKey/CMP/USB/I2C/SPI/CAN FD/temperature"
+      }
+    ],
+    "checkedAt": "2026-11-22"
+  },
+  {
+    "id": "CH32L103F7P6",
+    "family": "CH32L103",
+    "line": "CH32L1",
+    "status": null,
+    "core": "QingKe V4C",
+    "isa": "RV32IMAC",
+    "cores": 1,
+    "mhz": 96,
+    "fpu": "none",
+    "flashKB": 48,
+    "dataFlashKB": 0,
+    "ramKB": 20,
+    "package": "TSSOP20",
+    "pins": 20,
+    "packageSize": "4.4x6.5 mm",
+    "gpio": 16,
+    "vMin": 1.8,
+    "vMax": 3.6,
+    "supplyRanges": null,
+    "usbSupplyRanges": [
+      [
+        3.0,
+        3.6
+      ]
+    ],
+    "tempMin": -40,
+    "tempMax": 85,
+    "uart": 4,
+    "spi": 1,
+    "i2c": 2,
+    "i2s": 0,
+    "can": 1,
+    "usb": "1× USB 2.0 FS Device (PHY integrated)",
+    "eth": "none",
+    "radio": "none",
+    "adcBits": 12,
+    "adcChannels": 9,
+    "dacChannels": 0,
+    "opamps": 1,
+    "comparators": 3,
+    "touchChannels": 9,
+    "timers": "1× 16-bit advanced, 2× 16-bit general, 1× 32-bit general, 1× 16-bit LPTIM, RTC, 64-bit SysTick, 2× WDG",
+    "dmaChannels": 8,
+    "debug": "2-wire SDI",
+    "features": {
+      "usbFS": true,
+      "usbHS": false,
+      "usbSS": false,
+      "usbHost": null,
+      "usbDevice": true,
+      "usbPD": true,
+      "ethernet": false,
+      "ethPHY": false,
+      "ble": false,
+      "rf24": false,
+      "can": true,
+      "canFD": false,
+      "adc": true,
+      "dac": false,
+      "opamp": true,
+      "comparator": true,
+      "touch": true,
+      "lcd": false,
+      "sdio": false,
+      "extMem": false,
+      "dvp": false,
+      "i2s": false,
+      "rtc": true,
+      "crypto": false,
+      "lowPower": true,
+      "pioc": false
+    },
+    "notes": [
+      "Listed in CH32L103 datasheet V1.1 (resource table, TSSOP20 pinout, ordering table); dropped from later revisions. Check availability.",
+      "Values from V1.1 only: 48 KB flash, 20 KB SRAM, 16 GPIO, 9 ADC + 9 TouchKey, 1 OPA, 3 CMP, 4 USART, SPI1, 2 I2C, 1 CAN, USB FS device, USB PD DRP.",
+      "USB host role not established for this package."
+    ],
+    "sources": [
+      {
+        "title": "WCH CH32L103 datasheet V1.1",
+        "url": "https://www.wch-ic.com/downloads/CH32L103DS0_PDF.html",
+        "detail": "Resource table, Table 2-1-2 TSSOP20 (F7P6/F8P6) pinout, ordering table"
       }
     ],
     "checkedAt": "2026-11-22"

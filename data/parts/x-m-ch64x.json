@@ -870,7 +870,7 @@
       "pioc": false
     },
     "notes": [
-      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system.",
+      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system, only at ambient ≤ 70 °C with adequate cooling (datasheet V1.2 clock table, note 5).",
       "480 KB CodeFlash = 192 KB zero-wait + 288 KB non-zero-wait area; 28 KB BootLoader separate.",
       "Four 12-bit ADC units, up to 5 Msps each; ADC channel count is total external inputs over ADC1-4.",
       "USB HS controller supports high-speed and full-speed; no separate FS controller.",
@@ -962,7 +962,7 @@
       "pioc": false
     },
     "notes": [
-      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system.",
+      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system, only at ambient ≤ 70 °C with adequate cooling (datasheet V1.2 clock table, note 5).",
       "480 KB CodeFlash = 192 KB zero-wait + 288 KB non-zero-wait area; 28 KB BootLoader separate.",
       "Four 12-bit ADC units, up to 5 Msps each; ADC channel count is total external inputs over ADC1-4.",
       "USB HS controller supports high-speed and full-speed; no separate FS controller.",
@@ -1054,7 +1054,7 @@
       "pioc": false
     },
     "notes": [
-      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system.",
+      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system, only at ambient ≤ 70 °C with adequate cooling (datasheet V1.2 clock table, note 5).",
       "480 KB CodeFlash = 192 KB zero-wait + 288 KB non-zero-wait area; 28 KB BootLoader separate.",
       "Four 12-bit ADC units, up to 5 Msps each; ADC channel count is total external inputs over ADC1-4.",
       "USB HS controller supports high-speed and full-speed; no separate FS controller.",
@@ -1145,7 +1145,7 @@
       "pioc": false
     },
     "notes": [
-      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system.",
+      "Core max 480 MHz, system bus max 313 MHz; a documented performance mode allows 625 MHz core / 400 MHz system, only at ambient ≤ 70 °C with adequate cooling (datasheet V1.2 clock table, note 5).",
       "480 KB CodeFlash = 192 KB zero-wait + 288 KB non-zero-wait area; 28 KB BootLoader separate.",
       "Four 12-bit ADC units, up to 5 Msps each; ADC channel count is total external inputs over ADC1-4.",
       "USB HS controller supports high-speed and full-speed; no separate FS controller.",
@@ -1680,8 +1680,8 @@
     "adcBits": 12,
     "adcChannels": 15,
     "dacChannels": 0,
-    "opamps": null,
-    "comparators": null,
+    "opamps": 4,
+    "comparators": 3,
     "touchChannels": 0,
     "timers": "1× 16-bit advanced (TIM1), 1× 16-bit general (TIM2), 1× 16-bit streamlined (TIM3), 32-bit SysTick, WWDG",
     "dmaChannels": 7,
@@ -1701,8 +1701,8 @@
       "canFD": false,
       "adc": true,
       "dac": false,
-      "opamp": null,
-      "comparator": null,
+      "opamp": true,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1719,7 +1719,7 @@
       "No per-model resource table in DS2: GPIO and ADC counts counted from DS2 pin table (GPIO count includes 5 output-only HVOD pins PB7/PB9/PB11/PB13/PB15).",
       "OPA/CMP availability per package not tabulated in DS2; left null.",
       "VHV range taken from CH32M030DS0 general operating conditions (4.0-29.0 V); DS2 absolute max VHV 30 V.",
-      "PD pins CC1/CC2/CC3/CC4 with CCxGND pins enabling dead-battery Rd.",
+      "PD pins CC1-CC4 (CC4R function documented); CC1GND-CC4GND dead-battery pins are bonded on C9U7 only (DS2 V1.3 Table 1-1).",
       "ISA per datasheet is RV32IMCB.",
       "SPI MISO has no pin on this package (all MISO mappings unbonded); SPI usability not stated."
     ],
@@ -1733,6 +1733,11 @@
         "title": "WCH CH32M030 datasheet (CH32M030DS0, Chinese) V1.3",
         "url": "https://www.wch.cn/downloads/CH32M030DS0_PDF.html",
         "detail": "Model resource table; §1.4.3 power scheme; Table 3-1/3-2 temperature and supply; Ch.4 package/ordering, naming rules. Text read from copy https://ch32-riscv-ug.github.io/CH32M030/datasheet_zh/CH32M030DS0.PDF"
+      },
+      {
+        "title": "WCH CH32M030 datasheet DS0 V1.3",
+        "url": "https://file.wch.cn/download/file?id=506",
+        "detail": "§1.4.18.1-2: OPA1-4, CMP1-3 function mapping"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1771,8 +1776,8 @@
     "adcBits": 12,
     "adcChannels": 20,
     "dacChannels": 0,
-    "opamps": null,
-    "comparators": null,
+    "opamps": 4,
+    "comparators": 3,
     "touchChannels": 0,
     "timers": "1× 16-bit advanced (TIM1), 1× 16-bit general (TIM2), 1× 16-bit streamlined (TIM3), 32-bit SysTick, WWDG",
     "dmaChannels": 7,
@@ -1792,8 +1797,8 @@
       "canFD": false,
       "adc": true,
       "dac": false,
-      "opamp": null,
-      "comparator": null,
+      "opamp": true,
+      "comparator": true,
       "touch": false,
       "lcd": false,
       "sdio": false,
@@ -1823,6 +1828,11 @@
         "title": "WCH CH32M030 datasheet (CH32M030DS0, Chinese) V1.3",
         "url": "https://www.wch.cn/downloads/CH32M030DS0_PDF.html",
         "detail": "Model resource table; §1.4.3 power scheme; Table 3-1/3-2 temperature and supply; Ch.4 package/ordering, naming rules. Text read from copy https://ch32-riscv-ug.github.io/CH32M030/datasheet_zh/CH32M030DS0.PDF"
+      },
+      {
+        "title": "WCH CH32M030 datasheet DS0 V1.3",
+        "url": "https://file.wch.cn/download/file?id=506",
+        "detail": "§1.4.18.1-2: OPA1-4, CMP1-3 function mapping"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1996,6 +2006,103 @@
       "Vendor package name QFN26C3. CH32V007 + CH282 equivalent."
     ],
     "sources": [
+      {
+        "title": "WCH CH32V007/M007 datasheet (CH32V007DS0) V1.8",
+        "url": "https://www.wch-ic.com/downloads/CH32V007DS0_PDF.html",
+        "detail": "Model resource table p.2; Tables 3-2-1..3-2-4 operating conditions; Ch.4 package/ordering. Text read from copy https://ch32-riscv-ug.github.io/CH32V006/datasheet_en/CH32V007DS0.PDF"
+      },
+      {
+        "title": "WCH CH32M007 product page and selection table (image, 2026-10-14)",
+        "url": "https://www.wch.cn/products/CH32M007.html",
+        "detail": "Selection image https://img.wch.cn/20261014/031559fd-30d3-4c62-9b36-4fe3f2a963f3.png"
+      }
+    ],
+    "checkedAt": "2026-11-22"
+  },
+  {
+    "id": "CH32M007E8U6",
+    "family": "CH32M007",
+    "line": "CH32M",
+    "status": null,
+    "core": "QingKe V2C",
+    "isa": "RV32EmC",
+    "cores": 1,
+    "mhz": 48,
+    "fpu": "none",
+    "flashKB": 62,
+    "dataFlashKB": 0,
+    "ramKB": 8,
+    "package": "QFN26",
+    "pins": 26,
+    "packageSize": "3x3 mm",
+    "gpio": 16,
+    "vMin": 6,
+    "vMax": 26,
+    "supplyRanges": null,
+    "usbSupplyRanges": null,
+    "tempMin": -40,
+    "tempMax": 85,
+    "uart": 2,
+    "spi": 1,
+    "i2c": 1,
+    "i2s": 0,
+    "can": 0,
+    "usb": "none",
+    "eth": "none",
+    "radio": "none",
+    "adcBits": 12,
+    "adcChannels": 7,
+    "dacChannels": 0,
+    "opamps": 1,
+    "comparators": 2,
+    "touchChannels": 7,
+    "timers": "1× 16-bit advanced, 1× 16-bit general, 1× 16-bit streamlined, 32-bit SysTick, IWDG, WWDG",
+    "dmaChannels": 7,
+    "debug": "1-wire or 2-wire SDI",
+    "features": {
+      "usbFS": false,
+      "usbHS": false,
+      "usbSS": false,
+      "usbHost": false,
+      "usbDevice": false,
+      "usbPD": false,
+      "ethernet": false,
+      "ethPHY": false,
+      "ble": false,
+      "rf24": false,
+      "can": false,
+      "canFD": false,
+      "adc": true,
+      "dac": false,
+      "opamp": true,
+      "comparator": true,
+      "touch": true,
+      "lcd": false,
+      "sdio": false,
+      "extMem": false,
+      "dvp": false,
+      "i2s": false,
+      "rtc": null,
+      "crypto": false,
+      "lowPower": true,
+      "pioc": false
+    },
+    "notes": [
+      "Integrated 24V three-phase P+N gate pre-driver with dead-time control and undervoltage protection; high-voltage LDO.",
+      "vMin/vMax are the VHV input range; MCU VDD is generated internally (about 5 V).",
+      "62 KB CodeFlash per datasheet; product page and selection image list 65 KB.",
+      "ADC: 7 external + 2 internal channels; OPA supports 3-channel polling; CMP: 1 general + 1 streamlined cascaded to OPA output.",
+      "Selection image (2026-10-14) lists an RTC, an LP 16-bit timer and 64-bit SysTick; datasheet V1.8 lists a 16-bit streamlined timer, 32-bit SysTick and no RTC; rtc left null.",
+      "ISA documented as RV32EmC.",
+      "Vendor package name QFN26C3. CH32V007 + CH282 equivalent.",
+      "-40..85 °C grade listed in WCH selection guides; current datasheet lists only E8U7. Check availability."
+    ],
+    "sources": [
+      {
+        "title": "WCH product selection guide (Dec 2025)",
+        "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
+        "detail": "CH32M007 product models list; WCH PDF hosted by a distributor"
+      },
       {
         "title": "WCH CH32V007/M007 datasheet (CH32V007DS0) V1.8",
         "url": "https://www.wch-ic.com/downloads/CH32V007DS0_PDF.html",
@@ -2286,6 +2393,102 @@
       "PA1/PA6 bonded together internally; PC5/PWM1, PC7/PWM2, PB5/PWME internally connected."
     ],
     "sources": [
+      {
+        "title": "WCH CH32M006 datasheet (CH32V006DS2, Chinese) V1.1",
+        "url": "https://www.wch.cn/downloads/CH32V006DS2_PDF.html",
+        "detail": "Resource table p.1; Tables 3-1, 3-2-1, 3-2-2; Ch.4 package/ordering. Text read from copy https://ch32-riscv-ug.github.io/CH32V006/datasheet_zh/CH32V006DS2.PDF"
+      },
+      {
+        "title": "WCH CH32M006 product page and selection table (image, 2026-10-14)",
+        "url": "https://www.wch.cn/products/CH32M006.html",
+        "detail": "Selection image https://img.wch.cn/20261014/3374d967-fa5a-41e3-b434-70c3cd6bf41e.png"
+      }
+    ],
+    "checkedAt": "2026-11-22"
+  },
+  {
+    "id": "CH32M006A8U6",
+    "family": "CH32M006",
+    "line": "CH32M",
+    "status": null,
+    "core": "QingKe V2C",
+    "isa": "RV32EmC",
+    "cores": 1,
+    "mhz": 48,
+    "fpu": "none",
+    "flashKB": 65,
+    "dataFlashKB": 0,
+    "ramKB": 8,
+    "package": "QFN16",
+    "pins": 16,
+    "packageSize": "3x3 mm",
+    "gpio": 7,
+    "vMin": 2.0,
+    "vMax": 5.5,
+    "supplyRanges": null,
+    "usbSupplyRanges": null,
+    "tempMin": -40,
+    "tempMax": 85,
+    "uart": 1,
+    "spi": 0,
+    "i2c": 1,
+    "i2s": 0,
+    "can": null,
+    "usb": "none",
+    "eth": "none",
+    "radio": "none",
+    "adcBits": 12,
+    "adcChannels": 4,
+    "dacChannels": 0,
+    "opamps": 1,
+    "comparators": 2,
+    "touchChannels": 4,
+    "timers": "1× 16-bit advanced, 1× 16-bit general, 1× 16-bit streamlined, 32-bit SysTick, IWDG, WWDG",
+    "dmaChannels": 7,
+    "debug": "1-wire (default) or 2-wire SDI",
+    "features": {
+      "usbFS": false,
+      "usbHS": false,
+      "usbSS": false,
+      "usbHost": false,
+      "usbDevice": false,
+      "usbPD": false,
+      "ethernet": false,
+      "ethPHY": false,
+      "ble": false,
+      "rf24": false,
+      "can": null,
+      "canFD": false,
+      "adc": true,
+      "dac": false,
+      "opamp": true,
+      "comparator": true,
+      "touch": true,
+      "lcd": false,
+      "sdio": false,
+      "extMem": false,
+      "dvp": false,
+      "i2s": false,
+      "rtc": null,
+      "crypto": false,
+      "lowPower": true,
+      "pioc": false
+    },
+    "notes": [
+      "CH32V006 + CH271 equivalent: integrated 5 V full bridge (2 P+N pairs, about 30 mOhm, 5 V/1 A rated, 2 A peak), current-sense amplifier, ROP feedback amplifier, UVL/OCP/OTP.",
+      "VDD 2.0-5.5 V (2.4 V min with ADC, 3.0 V min with full-bridge); PVDD5 2.9-5.5 V.",
+      "Datasheet lists 'max 65 KB' CodeFlash and 'max 8 KB' SRAM for the CH32V006 die.",
+      "Datasheet resource table: USART1, 1 I2C, no SPI. Selection image (2026-10-14) shows I2C 1 and a CAN column = 1, plus RTC; not in datasheet, so can/rtc left null.",
+      "ADC: 4 external + 2 internal channels; OPA P-input supports 3-channel polling.",
+      "PA1/PA6 bonded together internally; PC5/PWM1, PC7/PWM2, PB5/PWME internally connected.",
+      "-40..85 °C grade listed in WCH selection guides; current datasheet lists only A8U7. Check availability."
+    ],
+    "sources": [
+      {
+        "title": "WCH product selection guide (Dec 2025)",
+        "url": "https://cdn.promelec.ru/upload/items/2026/01/12/PRODUCT_GUIDE.PDF",
+        "detail": "Motor MCU table, CH32M006A8U6 row; WCH PDF hosted by a distributor"
+      },
       {
         "title": "WCH CH32M006 datasheet (CH32V006DS2, Chinese) V1.1",
         "url": "https://www.wch.cn/downloads/CH32V006DS2_PDF.html",
@@ -3139,7 +3342,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V4C",
-    "isa": null,
+    "isa": "RV32IMAC",
     "cores": 1,
     "mhz": 125,
     "fpu": "none",
@@ -3148,7 +3351,7 @@
     "ramKB": 80,
     "package": "QFN68",
     "pins": 68,
-    "packageSize": null,
+    "packageSize": "8x8 mm",
     "gpio": 40,
     "vMin": 3.0,
     "vMax": 3.6,
@@ -3223,6 +3426,16 @@
         "title": "WCH Product Selection Manual 2024Q1",
         "url": "https://www.wch-ic.com/",
         "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
+      },
+      {
+        "title": "WCH QingKe V4 processor manual V1.5",
+        "url": "https://file.wch.cn/download/file?id=390",
+        "detail": "ISA of the V4C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3233,7 +3446,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V4C",
-    "isa": null,
+    "isa": "RV32IMAC",
     "cores": 1,
     "mhz": 125,
     "fpu": "none",
@@ -3242,7 +3455,7 @@
     "ramKB": 80,
     "package": "QFN32",
     "pins": 32,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 13,
     "vMin": 3.0,
     "vMax": 3.6,
@@ -3318,6 +3531,16 @@
         "title": "WCH Product Selection Manual 2024Q1",
         "url": "https://www.wch-ic.com/",
         "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
+      },
+      {
+        "title": "WCH QingKe V4 processor manual V1.5",
+        "url": "https://file.wch.cn/download/file?id=390",
+        "detail": "ISA of the V4C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3328,7 +3551,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V4C",
-    "isa": null,
+    "isa": "RV32IMAC",
     "cores": 1,
     "mhz": 125,
     "fpu": "none",
@@ -3337,7 +3560,7 @@
     "ramKB": 80,
     "package": "QFN32",
     "pins": 32,
-    "packageSize": null,
+    "packageSize": "4x4 mm",
     "gpio": 10,
     "vMin": 3.0,
     "vMax": 3.6,
@@ -3413,6 +3636,16 @@
         "title": "WCH Product Selection Manual 2024Q1",
         "url": "https://www.wch-ic.com/",
         "detail": "RISC-V USB/Ethernet table CH645 family row (125MHz, 224K Flash, 80K RAM, QFN68/QFN32); CH645 page block diagram (80KB SRAM) and per-part table (CH645W QFN68, CH645F QFN32, RAM 72-80K); copy supplied by user"
+      },
+      {
+        "title": "WCH QingKe V4 processor manual V1.5",
+        "url": "https://file.wch.cn/download/file?id=390",
+        "detail": "ISA of the V4C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3423,7 +3656,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V3C",
-    "isa": null,
+    "isa": "RV32IMCB",
     "cores": 1,
     "mhz": 160,
     "fpu": "none",
@@ -3432,7 +3665,7 @@
     "ramKB": 232,
     "package": "QFN88",
     "pins": 88,
-    "packageSize": null,
+    "packageSize": "10x10 mm",
     "gpio": 38,
     "vMin": null,
     "vMax": null,
@@ -3500,6 +3733,16 @@
         "title": "WCH CH664 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH664.html",
         "detail": "Feature list and selection image https://img.wch.cn/20250930/7cbc74ca-675f-427a-b7b2-34c8801de492.png"
+      },
+      {
+        "title": "WCH QingKe V3 processor manual V1.6",
+        "url": "https://file.wch.cn/download/file?id=426",
+        "detail": "ISA of the V3C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3510,7 +3753,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V3C",
-    "isa": null,
+    "isa": "RV32IMCB",
     "cores": 1,
     "mhz": 160,
     "fpu": "none",
@@ -3519,7 +3762,7 @@
     "ramKB": 232,
     "package": "QFN68",
     "pins": 68,
-    "packageSize": null,
+    "packageSize": "8x8 mm",
     "gpio": 27,
     "vMin": null,
     "vMax": null,
@@ -3586,6 +3829,16 @@
         "title": "WCH CH664 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH664.html",
         "detail": "Feature list and selection image https://img.wch.cn/20250930/7cbc74ca-675f-427a-b7b2-34c8801de492.png"
+      },
+      {
+        "title": "WCH QingKe V3 processor manual V1.6",
+        "url": "https://file.wch.cn/download/file?id=426",
+        "detail": "ISA of the V3C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -3596,7 +3849,7 @@
     "line": "CH64x",
     "status": null,
     "core": "QingKe V3C",
-    "isa": null,
+    "isa": "RV32IMCB",
     "cores": 1,
     "mhz": 160,
     "fpu": "none",
@@ -3605,7 +3858,7 @@
     "ramKB": 232,
     "package": "QFN48",
     "pins": 48,
-    "packageSize": null,
+    "packageSize": "5x5 mm",
     "gpio": 14,
     "vMin": null,
     "vMax": null,
@@ -3671,6 +3924,16 @@
         "title": "WCH CH664 product page (wch.cn)",
         "url": "https://www.wch.cn/products/CH664.html",
         "detail": "Feature list and selection image https://img.wch.cn/20250930/7cbc74ca-675f-427a-b7b2-34c8801de492.png"
+      },
+      {
+        "title": "WCH QingKe V3 processor manual V1.6",
+        "url": "https://file.wch.cn/download/file?id=426",
+        "detail": "ISA of the V3C core"
+      },
+      {
+        "title": "WCH package manual V4.0",
+        "url": "https://file.wch.cn/download/file?id=34",
+        "detail": "Body size from package designation"
       }
     ],
     "checkedAt": "2026-11-22"

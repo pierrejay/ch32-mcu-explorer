@@ -1654,7 +1654,7 @@
     "can": 1,
     "usb": "1× USB 2.0 FS Device (USBD) + 1× USB 2.0 FS Host/Device (USBFS)",
     "eth": "10BASE-T MAC + PHY",
-    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm",
+    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 8,
     "dacChannels": 0,
@@ -1674,7 +1674,7 @@
       "ethernet": true,
       "ethPHY": true,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": true,
       "canFD": false,
       "adc": true,
@@ -1700,7 +1700,8 @@
       "Datasheet §2.5.10 states 2 DMA controllers/18 channels; feature list and block diagram give 1 controller/8 channels.",
       "Integrated 10M Ethernet MAC+PHY (TXP/TXN/RXP/RXN pins); no MII/RMII pins for an external PHY.",
       "Only OPA2 available on this package.",
-      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6."
+      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -1712,6 +1713,11 @@
         "title": "WCH CH32V208 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261010/5accc798-f6b5-49e4-922e-6a502b5498a3.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V208.html"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://github.com/openwch/ch32v20x/blob/main/EVT/EXAM/BLE/RF_PHY/APP/RF_PHY.c",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1752,7 +1758,7 @@
     "can": 1,
     "usb": "1× USB 2.0 FS Device (USBD) + 1× USB 2.0 FS Host/Device (USBFS)",
     "eth": "none",
-    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm",
+    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 10,
     "dacChannels": 0,
@@ -1772,7 +1778,7 @@
       "ethernet": false,
       "ethPHY": false,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": true,
       "canFD": false,
       "adc": true,
@@ -1798,7 +1804,8 @@
       "Datasheet §2.5.10 states 2 DMA controllers/18 channels; feature list and block diagram give 1 controller/8 channels.",
       "No Ethernet on QFN48 (Ethernet only on GBU6, RBT6, WBU6).",
       "Datasheet Table 2-1 and pin table give 35 GPIO and 10 ADC channels; wch.cn selection table lists 37 GPIO and 16 ADC/TouchKey channels.",
-      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6."
+      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -1810,6 +1817,11 @@
         "title": "WCH CH32V208 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261010/5accc798-f6b5-49e4-922e-6a502b5498a3.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V208.html"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://github.com/openwch/ch32v20x/blob/main/EVT/EXAM/BLE/RF_PHY/APP/RF_PHY.c",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1850,7 +1862,7 @@
     "can": 1,
     "usb": "1× USB 2.0 FS Device (USBD) + 1× USB 2.0 FS Host/Device (USBFS)",
     "eth": "10BASE-T MAC + PHY",
-    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm",
+    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 16,
     "dacChannels": 0,
@@ -1870,7 +1882,7 @@
       "ethernet": true,
       "ethPHY": true,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": true,
       "canFD": false,
       "adc": true,
@@ -1895,7 +1907,8 @@
       "OPA blocks can also be configured as comparators; no separate comparator block.",
       "Datasheet §2.5.10 states 2 DMA controllers/18 channels; feature list and block diagram give 1 controller/8 channels.",
       "Integrated 10M Ethernet MAC+PHY (TXP/TXN/RXP/RXN pins); no MII/RMII pins for an external PHY.",
-      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6."
+      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -1907,6 +1920,11 @@
         "title": "WCH CH32V208 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261010/5accc798-f6b5-49e4-922e-6a502b5498a3.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V208.html"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://github.com/openwch/ch32v20x/blob/main/EVT/EXAM/BLE/RF_PHY/APP/RF_PHY.c",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -1947,7 +1965,7 @@
     "can": 1,
     "usb": "1× USB 2.0 FS Device (USBD) + 1× USB 2.0 FS Host/Device (USBFS)",
     "eth": "10BASE-T MAC + PHY",
-    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm",
+    "radio": "BLE 5.3 (2 Mbps), TX levels to +7 dBm + 2.4 GHz proprietary (SDK RF_PHY)",
     "adcBits": 12,
     "adcChannels": 16,
     "dacChannels": 0,
@@ -1967,7 +1985,7 @@
       "ethernet": true,
       "ethPHY": true,
       "ble": true,
-      "rf24": null,
+      "rf24": true,
       "can": true,
       "canFD": false,
       "adc": true,
@@ -1992,7 +2010,8 @@
       "OPA blocks can also be configured as comparators; no separate comparator block.",
       "Datasheet §2.5.10 states 2 DMA controllers/18 channels; feature list and block diagram give 1 controller/8 channels.",
       "Integrated 10M Ethernet MAC+PHY (TXP/TXN/RXP/RXN pins); no MII/RMII pins for an external PHY.",
-      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6."
+      "GPIO supply: shared with VDD on GBU6/CBU6/RBT6; independent VIO on WBU6.",
+      "Proprietary 2.4 GHz mode is not described in the datasheet; WCH SDK ships RF_PHY examples for this part."
     ],
     "sources": [
       {
@@ -2004,6 +2023,11 @@
         "title": "WCH CH32V208 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261010/5accc798-f6b5-49e4-922e-6a502b5498a3.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V208.html"
+      },
+      {
+        "title": "WCH SDK RF_PHY example",
+        "url": "https://github.com/openwch/ch32v20x/blob/main/EVT/EXAM/BLE/RF_PHY/APP/RF_PHY.c",
+        "detail": "Basic link-layer RF_PHY example"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -2052,7 +2076,7 @@
     "comparators": 0,
     "touchChannels": 10,
     "timers": "1× 16-bit advanced, 3× 16-bit general, 2× WDG, 64-bit SysTick",
-    "dmaChannels": null,
+    "dmaChannels": 18,
     "debug": "2-wire SDI (SWDIO/SWCLK)",
     "features": {
       "usbFS": true,
@@ -2099,6 +2123,11 @@
         "title": "WCH CH32V303 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261009/130eb3b0-e313-46a7-a9f8-6272764626d6.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V303.html"
+      },
+      {
+        "title": "WCH CH32FV2x_V3x reference manual V2.5",
+        "url": "https://www.wch-ic.com/downloads/CH32FV2x_V3xRM_PDF.html",
+        "detail": "Device classification (CH32V30x_D8), §11.2.3: DMA1 7 ch + DMA2 11 ch"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -2147,7 +2176,7 @@
     "comparators": 0,
     "touchChannels": 16,
     "timers": "1× 16-bit advanced, 3× 16-bit general, 2× WDG, 64-bit SysTick",
-    "dmaChannels": null,
+    "dmaChannels": 18,
     "debug": "2-wire SDI (SWDIO/SWCLK)",
     "features": {
       "usbFS": true,
@@ -2194,6 +2223,11 @@
         "title": "WCH CH32V303 product page selection table (wch.cn)",
         "url": "https://img.wch.cn/20261009/130eb3b0-e313-46a7-a9f8-6272764626d6.png",
         "detail": "Per-part table embedded in https://www.wch.cn/products/CH32V303.html"
+      },
+      {
+        "title": "WCH CH32FV2x_V3x reference manual V2.5",
+        "url": "https://www.wch-ic.com/downloads/CH32FV2x_V3xRM_PDF.html",
+        "detail": "Device classification (CH32V30x_D8), §11.2.3: DMA1 7 ch + DMA2 11 ch"
       }
     ],
     "checkedAt": "2026-11-22"
@@ -2533,7 +2567,7 @@
     "dmaChannels": 18,
     "debug": "2-wire SDI (SWDIO/SWCLK)",
     "features": {
-      "usbFS": false,
+      "usbFS": true,
       "usbHS": true,
       "usbSS": false,
       "usbHost": true,
@@ -2628,7 +2662,7 @@
     "dmaChannels": 18,
     "debug": "2-wire SDI (SWDIO/SWCLK)",
     "features": {
-      "usbFS": false,
+      "usbFS": true,
       "usbHS": true,
       "usbSS": false,
       "usbHost": true,
