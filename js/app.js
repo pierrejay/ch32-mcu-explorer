@@ -232,7 +232,7 @@
           <div class="frow">${selectField('adcChannels', ...SELECTS.adcChannels, f.min.adcChannels)}</div>
         </section>
         <section class="fsec"><h3>Features <small>click: need · twice: exclude</small></h3>${featHtml}</section>
-        <section class="fsec"><label class="toggle"><input type="checkbox" id="funk"${f.unknown ? ' checked' : ''}><span>Keep parts whose value is unconfirmed<br><span class="muted" style="font-size:12px">Shown with <span class="unkflag">?</span> — a criterion could not be checked against vendor documents.</span></span></label></section>
+        <section class="fsec"><label class="toggle"><input type="checkbox" id="funk"${f.unknown ? ' checked' : ''}><span>Show parts with unknown values (<span class="unkflag">?</span>)</span></label></section>
       </aside>
       <section class="results">
         <div class="rbar">
@@ -296,13 +296,13 @@
     const q = $('#quick');
     if (nActive) { q.innerHTML = ''; return; }
     q.innerHTML = `<span class="muted">Start from:</span>${QUICK.map(([l, h]) => `<a class="pill" href="#/?${h}">${esc(l)}</a>`).join('')}`
-      + (store.get('hintSeen', false) ? '' : `<p class="hint-line">Type a part number in the top search to open its sheet, narrow the list with the filters, tick rows to compare. <button class="btn ghost small" type="button" data-act="hint-x">Got it</button></p>`);
+      + (store.get('hintSeen', false) ? '' : `<p class="hint-line">Search a part at the top, filter on the left, tick rows to compare. <button class="btn ghost small" type="button" data-act="hint-x">Got it</button></p>`);
   }
 
   function renderTable(rows) {
     const wrap = $('#tablewrap');
     if (!rows.length) {
-      wrap.innerHTML = `<div class="empty"><h3>No part matches</h3><p>Relax a criterion — the active filters are listed above.${state.filters.unknown ? '' : ' Parts with unconfirmed values are currently hidden.'}</p><button class="btn" data-act="reset" type="button">${icon('reset')}Reset filters</button></div>`;
+      wrap.innerHTML = `<div class="empty"><h3>No match</h3><p>${state.filters.unknown ? '' : 'Parts with unknown values are hidden. '}</p><button class="btn" data-act="reset" type="button">${icon('reset')}Reset filters</button></div>`;
       return;
     }
     const cols = state.cols;
@@ -466,7 +466,7 @@
       <div class="pcols">${L.FIELD_GROUPS.filter(g => g !== 'Identity').map(g => `<section class="card"><h2>${esc(g)}</h2><dl class="specs">${specRows(p, g)}</dl></section>`).join('')}</div>
       <div class="pgrid">
         <section class="card span"><h2>Features</h2><div class="featgrid">${featureCard(p)}</div></section>
-        ${(p.notes || []).length ? `<section class="card span"><h2>Notes &amp; caveats</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : ''}
+        ${(p.notes || []).length ? `<section class="card span"><h2>Notes</h2><ul class="notes">${p.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul></section>` : ''}
         <section class="card span"><h2>Sources</h2><ul class="sources">${(p.sources || []).map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title || s.url)}</a>${s.detail ? `<span class="det">${esc(s.detail)}</span>` : ''}</li>`).join('') || '<li class="muted">No source recorded.</li>'}</ul></section>
       </div>
       <div class="legend"><span>${UNK} not established from vendor documents</span><span><span class="dash">—</span> documented absent</span></div>
@@ -499,8 +499,8 @@
     if (!ps.length) {
       const ex = [['CH32V003F4P6', 'CH32V006K8U7', 'CH32V203C8T6'], ['CH32V203C8T6', 'CH32V307VCT6', 'CH32H417QEU6'], ['CH582M', 'CH592X', 'CH585M']]
         .map(set => set.filter(getPart)).filter(s => s.length > 1);
-      $('#view').innerHTML = `<div class="page"><div class="cmp-empty"><h2>Compare parts side by side</h2>
-        <p>Tick parts in Browse, use “Add to compare” on a part page, or type a part number below. Up to ${MAX_COMPARE} parts.</p>
+      $('#view').innerHTML = `<div class="page"><div class="cmp-empty"><h2>Nothing to compare yet</h2>
+        <p>Tick parts in Browse or add one here (up to ${MAX_COMPARE}).</p>
         <div style="display:flex;justify-content:center;margin-top:14px">${adder}</div>
         ${ex.length ? `<div class="examples"><span class="muted">Examples</span>${ex.map(s => `<a href="#/compare/${s.map(enc).join(',')}">${s.join(' vs ')}</a>`).join('')}</div>` : ''}
       </div></div>`;
@@ -581,38 +581,18 @@
       const fams = [...FAMILIES.keys()].filter(f => FAMILIES.get(f)[0].line === l).sort(L.naturalCmp);
       return `<tr><td><a href="#/?line=${enc(l)}"><b>${l}</b></a></td><td>${fams.map(f => `<a href="#/?q=${enc(f)}">${esc(f)}</a> <span class="muted">(${FAMILIES.get(f).length})</span>`).join(', ')}</td><td class="num">${PARTS.filter(p => p.line === l).length}</td></tr>`;
     }).join('');
-    const nullRate = (() => {
-      let total = 0, nul = 0;
-      for (const p of PARTS) for (const f of L.FIELDS) { total++; if (!known(L.raw(p, f))) nul++; }
-      return total ? Math.round(100 * nul / total) : 0;
-    })();
     $('#view').innerHTML = `<div class="page"><div class="prose">
-      <h1>About the data</h1>
-      <p><b>${PARTS.length}</b> orderable part numbers across <b>${FAMILIES.size}</b> families. Data last checked <b>${esc(m.checkedAt || '?')}</b>. ${nullRate}% of spec cells are marked unknown.</p>
-      <h2>Coverage</h2>
+      <h1>Data</h1>
+      <p>${PARTS.length} parts, ${FAMILIES.size} families. Last checked ${esc(m.checkedAt || '?')}.</p>
       <table class="simple"><thead><tr><th>Line</th><th>Families (parts)</th><th class="num">Parts</th></tr></thead><tbody>${famRows}</tbody></table>
-      <h2>Conventions</h2>
+      <h2>Reading the values</h2>
       <ul>
-        <li>One row = one orderable part number. Family maxima are never copied onto smaller packages: GPIO, ADC inputs and peripheral counts are per package.</li>
-        <li>${UNK} means the value could not be established from a vendor document. <span class="dash">—</span> / ✕ means the vendor documents it as absent. The two are never merged.</li>
-        <li><b>Flash</b> is user program flash (CodeFlash). Configurable flash/SRAM splits, DataFlash and boot areas are explained in each part's notes.</li>
-        <li><b>Clock</b> is the documented maximum for the main core. Zero-wait-state limits are in notes where documented.</li>
-        <li><b>Supply</b> is the main VDD range. Additional domains or narrower ranges required by USB are in notes.</li>
-        <li><b>ADC inputs</b> counts external analog channels available on that package.</li>
-        <li>Filtering: a part is removed only when a vendor document contradicts a criterion. A part with an unknown value stays in the list, flagged <span class="unkflag">?</span>, unless you untick “Keep parts whose value is unconfirmed”.</li>
+        <li>${UNK} = not found in WCH documents. <span class="dash">—</span> = WCH says it's absent.</li>
+        <li>Values are for that exact package, not the family maximum.</li>
+        <li>Flash on CH32V20x/V30x: “224 KB (64 zero-wait)” means 224 KB total, the first 64 KB run without wait states.</li>
       </ul>
-      <h2>Sources</h2>
-      <p>Each part lists the vendor documents used (datasheet revision, table or section). Specs come from WCH datasheets, WCH product pages/selection tables and the openwch GitHub repositories. Distributor listings are only used to confirm that a part number exists. No pricing or stock data: check your distributor.</p>
-      <p>This is an independent project, not affiliated with WCH (Nanjing Qinheng Microelectronics). Always validate against the current datasheet before committing a design — pin multiplexing, clock trees and electrical limits are out of scope here.</p>
-      <h2>Updating the catalogue</h2>
-      <p>Records live in <code>data/parts/*.json</code> (schema in <code>data/SCHEMA.md</code>). After editing, regenerate the bundled file and run the checks:</p>
-      <pre>python3 tools/build_data.py     # validates and writes js/data.js
-node --test tests/              # optional, Node 18+</pre>
-      <p>The site itself has no build step and no dependencies: open <code>index.html</code> directly, or publish the folder on GitHub Pages.</p>
-      <h2>Shortcuts</h2>
-      <ul><li><kbd>/</kbd> focuses the part search. Arrow keys + Enter pick a suggestion.</li><li>In Browse, click a column header to sort; Ctrl/⌘-click a row to open it in a new tab.</li><li>Filter sets and comparisons are encoded in the URL — copy it to share.</li></ul>
-      <h2>Export</h2>
-      <p><button class="btn" type="button" data-act="all-csv">${icon('dl')}Full catalogue (CSV)</button> <button class="btn" type="button" data-act="all-json">${icon('dl')}Full catalogue (JSON)</button></p>
+      <p>Each part page lists the datasheets used. Not affiliated with WCH.</p>
+      <p><button class="btn" type="button" data-act="all-csv">${icon('dl')}CSV</button> <button class="btn" type="button" data-act="all-json">${icon('dl')}JSON</button></p>
     </div></div>`;
     $('.page').addEventListener('click', e => {
       const b = e.target.closest('button'); if (!b) return;
