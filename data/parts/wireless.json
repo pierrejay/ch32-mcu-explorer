@@ -2591,7 +2591,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 12,
     "dacChannels": 0,
@@ -2632,11 +2632,11 @@
     "notes": [
       "448 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (512 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "Segment LCD controller 20x4.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -2687,7 +2687,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 8,
     "dacChannels": 0,
@@ -2728,11 +2728,11 @@
     "notes": [
       "448 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (512 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "Segment LCD controller 16x4.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -2783,7 +2783,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 8,
     "dacChannels": 0,
@@ -2824,12 +2824,12 @@
     "notes": [
       "448 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (512 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "Segment LCD controller 16x4.",
       "DC-DC: yes on this package.",
-      "CH592A: extended -40 to 105 C ambient range and 2.3 V minimum supply (Tables 20-1/20-2)."
+      "CH592A: extended -40 to 105 C ambient range and 2.3 V minimum supply (Tables 20-1/20-2).",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -2880,7 +2880,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Host/Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 4,
     "dacChannels": 0,
@@ -2921,11 +2921,11 @@
     "notes": [
       "448 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (512 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "Segment LCD controller 8x4.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -2976,7 +2976,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 6,
     "dacChannels": 0,
@@ -3017,12 +3017,12 @@
     "notes": [
       "192 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (256 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "CH591: no TouchKey, no I2C, no USB host, ADC without DMA.",
       "Segment LCD controller 16x4.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -3073,7 +3073,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 4,
     "dacChannels": 0,
@@ -3114,11 +3114,11 @@
     "notes": [
       "192 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (256 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "CH591: no TouchKey, no I2C, no USB host, ADC without DMA.",
-      "DC-DC: yes on this package."
+      "DC-DC: yes on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
@@ -3169,7 +3169,7 @@
     "can": 0,
     "usb": "1× USB 2.0 FS Device (PHY integrated)",
     "eth": "none",
-    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (DS V1.9), -95 dBm RX",
+    "radio": "BLE 5.4 (1M/2M PHY) + 2.4 GHz proprietary, up to +9 dBm TX (+4.5 dBm on batch codes starting 3125), -95 dBm RX",
     "adcBits": 12,
     "adcChannels": 4,
     "dacChannels": 0,
@@ -3210,11 +3210,11 @@
     "notes": [
       "192 KB CodeFlash + 32 KB DataFlash + 24 KB BootLoader + 8 KB InfoFlash (256 KB total).",
       "Fsys up to 80 MHz (§6.3); flash basically zero-wait at 20 MHz (feature list; vendor tables list 20 MHz).",
-      "TX power: datasheet V1.9 says programmable -20 to +9 dBm; SDK README says +4.5 dBm.",
       "BLE PHY 1M/2M only (no Coded PHY; SDK lists Coded parameters as reserved).",
       "No standalone DMA controller listed; DMA built into SPI, USB, ADC (not CH591) and RF blocks.",
       "CH591: no TouchKey, no I2C, no USB host, ADC without DMA.",
-      "DC-DC: no on this package."
+      "DC-DC: no on this package.",
+      "TX power: datasheet V1.9 Table 20-3 lists +9 dBm max, with note 1: batches whose code starts with 3125 only reach +4.5 dBm. WCH product page and SDK README still say +4.5 dBm. BLE lib steps: ... +3, +4, then +9 dBm (±2 dB). Current at +9 dBm: 32.7 mA direct / 17.2 mA with DC-DC, vs 17.0 / 8.0 mA at +4.5 dBm."
     ],
     "sources": [
       {
